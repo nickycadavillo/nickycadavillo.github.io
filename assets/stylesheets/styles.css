@@ -1,14 +1,40 @@
 body {
   background-color: #34495e; }
 
-.main-header {
+.name-container {
+  width: 49.5%;
+  display: inline-block;
+  margin-left: 3px;
   margin-top: 10px;
-  margin-left: 75%; }
-  .main-header a {
+  color: white; }
+  .name-container #header-lname {
+    display: inline;
+    font-family: "Ovo", serif;
+    font-size: 1.2em;
+    color: #abb7b7; }
+  .name-container #header-fname {
+    font-size: 1em;
+    display: inline; }
+
+.nav-bar {
+  display: inline-block;
+  width: 49.5%;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 2px; }
+  .nav-bar a {
+    margin-left: 2em;
     color: white;
     width: 100px;
-    text-decoration: none;
-    margin-right: 2em; }
+    text-decoration: none; }
+  .nav-bar a:hover {
+    color: #abb7b7; }
+  .nav-bar i {
+    color: #f2784b; }
+  .nav-bar i:hover {
+    color: #abb7b7; }
 
 .hero-flat-color {
   background-color: #34495e;
@@ -16,7 +42,10 @@ body {
   .hero-flat-color .hero-header {
     padding-top: 100px; }
   .hero-flat-color .hero-text {
-    color: white; }
+    color: white;
+    -webkit-animation: typing 10s steps(33, end);
+    -moz-animation: typing 10s steps(33, end);
+    animation: typing 10s steps(33, end); }
   .hero-flat-color #hero-i {
     display: inline;
     margin-left: 20%;
@@ -27,7 +56,7 @@ body {
     display: inline;
     font-family: "Ovo", serif;
     font-size: 2.2em;
-    color: #f27935; }
+    color: #f2784b; }
   .hero-flat-color #hero-web {
     margin-top: 0;
     margin-bottom: 0;
@@ -51,11 +80,16 @@ body {
   border: 1px solid gray; }
 
 .tool-box {
-  margin-top: -1.2em;
   height: 200px;
   background-color: #abb7b7; }
   .tool-box .tools-header {
-    color: white;
+    font-size: 1.5em;
+    display: inline;
+    color: #34495e; }
+  .tool-box #tools-first {
     margin-left: 45%; }
+  .tool-box #tools-of {
+    font-family: "Ovo", serif;
+    color: #f2784b; }
 
 /*# sourceMappingURL=styles.css.map */
