@@ -1,12 +1,14 @@
 $primary-color: rgb(52, 73, 94);
 $secondary-color: rgb(171, 183, 183);
-$accent-color: rgb(242, 120, 75);
+$accent-color: rgb(224, 130, 131);
 $content-font: 'Lato', sans-serif;
 $serif-font: 'Ovo', serif;
 $width: 99%;
 
-body {
-  background-color: $primary-color;
+html {
+  // background-color: $primary-color;
+  background-image: url(/assets/images/background.jpeg);
+  background-size: contain;
 }
 
 .name-container{
@@ -17,15 +19,23 @@ body {
   color: rgb(255, 255, 255);
 
   #header-lname{
+    padding-left: 3px;
     display: inline;
-    font-family: $serif-font;
-    font-size: 1.2em;
+    font-size: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    // display: inline;
+    // font-family: $serif-font;
+    // font-size: 1.6em;
     color: $secondary-color;
   }
 
   #header-fname{
-    font-size: 1em;
-    display:inline;
+    letter-spacing: 3px;
+    display: inline;
+    font-family: $serif-font;
+    font-size: 1.4em;
+    color: $accent-color;
   }
 }
 
@@ -59,7 +69,7 @@ body {
 }
 
 .hero-flat-color{
-  background-color: $primary-color;
+  // background-color: rgb(255, 255, 255);
   height: 300px;
 
   .hero-header{
@@ -67,7 +77,7 @@ body {
   }
 
   .hero-text{
-    color: rgb(255, 255, 255);
+    color: $primary-color;
     -webkit-animation: typing 10s steps(33, end);
     -moz-animation: typing 10s steps(33, end);
     animation: typing 10s steps(33, end);
@@ -75,7 +85,7 @@ body {
 
   #hero-i {
     display: inline;
-    margin-left: 20%;
+    margin-left: 60%;
     padding-right: .2em;
     font-family: $content-font;
     font-size: 2.1em;
@@ -85,13 +95,13 @@ body {
     display: inline;
     font-family: $serif-font;
     font-size: 2.2em;
-    color: $accent-color;
+    color: white;
   }
 
   #hero-web {
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 20%;
+    margin-left: 60%;
     font-family: $content-font;
     font-size: 2.1em;
   }
@@ -99,24 +109,33 @@ body {
 }
 
 .portfolio-cont{
-  padding-top: 15px;
-  background-color: rgb(255, 255, 255);
+  padding-top: 10px;
+  background-color: white;
+}
+
+.portfolio-header{
+  color: $accent-color;
+  font-family: $serif-font;
+  letter-spacing: 5px;
+  text-align: center;
 }
 
 .project-one {
 
   .col-one-third {
+    vertical-align: top;
     display: inline-block;
     width: $width/3*2;
-    height: 300px;
-    border: 1px solid gray;
+    height: 400px;
+    border-top: 3px solid $secondary-color;
   }
 
   .col-two-third {
+    vertical-align: top;
     display: inline-block;
     width: $width/3;
-    height: 300px;
-    border: 1px solid gray;
+    height: 400px;
+    border-top: 3px solid $secondary-color;
   }
 }
 
@@ -132,6 +151,16 @@ body {
   @extend .project-one
 
 }
+
+.rider-desc{
+  color: $primary-color;
+}
+
+.rider-tech{
+  color: $primary-color;
+
+}
+
 
 .tool-box{
   height: 200px;
