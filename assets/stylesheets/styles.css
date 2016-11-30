@@ -31,6 +31,7 @@ html {
   margin-top: 10px;
   margin-right: 2px; }
   .nav-bar a {
+    letter-spacing: 3px;
     margin-left: 2em;
     color: white;
     width: 100px;
@@ -85,17 +86,29 @@ html {
   .project-one .col-one-third, .project-two .col-one-third, .project-three .col-one-third, .project-four .col-one-third {
     vertical-align: top;
     display: inline-block;
-    width: 66%;
-    height: 400px;
-    border-top: 3px solid #abb7b7; }
+    width: 33%;
+    border-top: 3px solid #abb7b7;
+    -webkit-column-break-inside: avoid; }
+    @media screen and (max-width: 320px) {
+      .project-one .col-one-third, .project-two .col-one-third, .project-three .col-one-third, .project-four .col-one-third {
+        width: 99%; } }
+    @media screen and (max-width: 700px) {
+      .project-one .col-one-third, .project-two .col-one-third, .project-three .col-one-third, .project-four .col-one-third {
+        width: 99%; } }
   .project-one .col-two-third, .project-two .col-two-third, .project-three .col-two-third, .project-four .col-two-third {
     vertical-align: top;
     display: inline-block;
-    width: 33%;
-    height: 400px;
+    width: 66%;
     border-top: 3px solid #abb7b7; }
+    @media screen and (max-width: 320px) {
+      .project-one .col-two-third, .project-two .col-two-third, .project-three .col-two-third, .project-four .col-two-third {
+        width: 100%; } }
+    @media screen and (max-width: 700px) {
+      .project-one .col-two-third, .project-two .col-two-third, .project-three .col-two-third, .project-four .col-two-third {
+        width: 66%; } }
   .project-one .portfolio-imgs, .project-two .portfolio-imgs, .project-three .portfolio-imgs, .project-four .portfolio-imgs {
-    height: auto; }
+    max-width: 100%;
+    max-height: 100%; }
 
 .rider-desc {
   color: #34495e; }
@@ -110,7 +123,6 @@ html {
     font-family: "Lato", sans-serif; }
 
 .port-icon {
-  padding: 5px;
   color: #abb7b7; }
 
 .tool-box {
