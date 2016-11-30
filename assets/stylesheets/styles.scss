@@ -155,11 +155,11 @@ html {
     border-top: 3px solid $secondary-color;
     @media screen and (max-width: $break-mobile){
       // width: $width/3;
-      width: 100%;
-      // min-width: $width;
+      height: 100%;
+      width: $width;
     }
     @media screen and (max-width: $break-tablet){
-      width: $width/3*2;
+      width: $width;
     }
   }
 
