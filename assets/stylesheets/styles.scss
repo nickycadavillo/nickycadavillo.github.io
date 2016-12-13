@@ -228,10 +228,11 @@ html {
     color: rgb(255, 255, 255);
 
     li{
-      padding: .5em;
       vertical-align: top;
       display: inline-block;
       width: 30%;
+      margin-left: 2%;
+      margin-top: 1em;
       font-size: 1em;
     }
   }
@@ -255,5 +256,31 @@ html {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 3%;
+  }
+}
+
+.footer {
+  margin-top: 0;
+  padding-top: 1em;
+  background-color: $secondary-color;
+  text-transform: uppercase;
+
+  h3 {
+    font-size: .9em;
+    letter-spacing: 3px;
+    color: $primary-color;
+    margin-left: 43%;
+    display: block;
+  }
+
+  a{
+    padding-left: .5em;
+    display: inline-block;
+    text-decoration: none;
+    color: darken($accent-color, 8%);
+  }
+
+  a:first-of-type{
+    margin-left: 40%;
   }
 }
