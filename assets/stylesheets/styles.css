@@ -166,7 +166,8 @@ html {
 
 .about-section {
   background-color: white;
-  border: 1px solid white; }
+  border: 1px solid white;
+  padding-bottom: 3%; }
   .about-section #about-header {
     font-size: 1.5em;
     color: #e08283;
@@ -177,26 +178,38 @@ html {
     font-family: "Lato", sans-serif;
     color: #34495e;
     margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 3%; }
+    margin-right: 10%; }
+  .about-section a {
+    text-transform: uppercase;
+    color: #e08283;
+    text-decoration: none;
+    margin-left: 45%;
+    letter-spacing: 3px; }
+  .about-section a:hover {
+    color: #34495e; }
 
 .footer {
   margin-top: 0;
+  padding-bottom: 1em;
   padding-top: 1em;
-  background-color: #abb7b7;
+  background-color: #e5e8e8;
   text-transform: uppercase; }
   .footer h3 {
     font-size: .9em;
     letter-spacing: 3px;
     color: #34495e;
     margin-left: 43%;
-    display: block; }
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 5px; }
   .footer a {
-    padding-left: .5em;
+    padding-left: .8em;
     display: inline-block;
     text-decoration: none;
-    color: #d86163; }
+    color: #db6e6f; }
+  .footer a:hover {
+    color: #34495e; }
   .footer a:first-of-type {
-    margin-left: 40%; }
+    margin-left: 42%; }
 
 /*# sourceMappingURL=styles.css.map */

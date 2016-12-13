@@ -241,6 +241,7 @@ html {
 .about-section{
   background-color: white;
   border: 1px solid white;
+  padding-bottom: 3%;
 
   #about-header{
     font-size: 1.5em;
@@ -255,14 +256,26 @@ html {
     color: $primary-color;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 3%;
+  }
+
+  a{
+   text-transform: uppercase;
+   color: $accent-color;
+   text-decoration: none;
+   margin-left: 45%;
+   letter-spacing: 3px;
+  }
+
+  a:hover{
+    color: $primary-color;
   }
 }
 
 .footer {
   margin-top: 0;
+  padding-bottom: 1em;
   padding-top: 1em;
-  background-color: $secondary-color;
+  background-color: lighten($secondary-color, 21%);
   text-transform: uppercase;
 
   h3 {
@@ -271,16 +284,22 @@ html {
     color: $primary-color;
     margin-left: 43%;
     display: block;
+    margin-bottom: 0;
+    padding-bottom: 5px;
   }
 
   a{
-    padding-left: .5em;
+    padding-left: .8em;
     display: inline-block;
     text-decoration: none;
-    color: darken($accent-color, 8%);
+    color: darken($accent-color, 5%);
+  }
+
+  a:hover{
+    color: $primary-color;
   }
 
   a:first-of-type{
-    margin-left: 40%;
+    margin-left: 42%;
   }
 }
