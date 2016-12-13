@@ -4,12 +4,14 @@ $accent-color: rgb(224, 130, 131);
 $content-font: 'Lato', sans-serif;
 $serif-font: 'Ovo', serif;
 $width: 99%;
-$break-mobile: 320px;
+$break-mobile: 420px;
 $break-tablet: 700px;
 
-html {
+html, body {
   background-image: url(/assets/images/background.jpeg);
   background-size: contain;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .name-container{
@@ -76,9 +78,9 @@ html {
 
   .hero-text{
     color: $primary-color;
-    -webkit-animation: typing 10s steps(33, end);
-    -moz-animation: typing 10s steps(33, end);
-    animation: typing 10s steps(33, end);
+    // -webkit-animation: typing 10s steps(33, end);
+    // -moz-animation: typing 10s steps(33, end);
+    // animation: typing 10s steps(33, end);
   }
 
   #hero-i {
@@ -207,8 +209,10 @@ html {
 }
 
 .tool-box{
-  padding-top: 2em;
-  height: 200px;
+  padding-top: 1.5em;
+  // height: 200px;
+  height: auto;
+  padding-bottom: 1.5em;
   background-color: $primary-color;
 
   .tools-header{
@@ -220,6 +224,12 @@ html {
     letter-spacing: 3px;
     font-family: $serif-font;
     color: $accent-color;
+    @media screen and (max-width: $break-mobile){
+      margin-left: 5%;
+    }
+    @media screen and (max-width: $break-tablet){
+      margin-left:10%;
+    }
   }
 
   .tools-list{
@@ -234,12 +244,34 @@ html {
       margin-left: 2%;
       margin-top: 1em;
       font-size: 1em;
+      @media screen and (max-width: $break-mobile){
+        margin-left: 0;
+        display: block;
+        width: 90%;
+        margin-right: 2%;
+      }
+      @media screen and (max-width: $break-tablet){
+        font-size: 1em;
+      }
 
       span{
         float: left;
         font-size: 110%;
-        margin: 0 10px 50px 0;
+        margin: 0 10px 60px 0;
         color: $secondary-color;
+        @media screen and (max-width: $break-mobile){
+          text-transform: uppercase;
+          float: left;
+          font-size: 100%;
+          margin: 0 6px 0 0;
+          font-size: 1em;
+        }
+        @media screen and (max-width: $break-tablet){
+          float: left;
+          font-size: 100%;
+          margin: 0 5px 0 0;
+          font-size: 1em;
+        }
       }
     }
   }
@@ -247,12 +279,19 @@ html {
 
 .about-section{
   background-color: white;
-  // border: 1px solid white;
   padding-top: 1.5em;
   padding-bottom: 5%;
+  @media screen and (max-width: $break-mobile){
+    padding-bottom: 10%;
+  }
+  @media screen and (max-width: $break-tablet){
+    padding-bottom: 10%;
+  }
 
   #about-header{
     font-size: 1.5em;
+    padding-right: 3%;
+    padding-left: 3%;
     color: $accent-color;
     font-family: $serif-font;
     letter-spacing: 5px;
@@ -265,6 +304,12 @@ html {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
+    @media screen and (max-width: $break-mobile){
+      margin-bottom: 10%;
+    }
+    @media screen and (max-width: $break-tablet){
+      margin-bottom: 10%;
+    }
   }
 
   a{
@@ -277,6 +322,12 @@ html {
     letter-spacing: 3px;
     padding-top: 1em;
     padding-bottom: 1em;
+    @media screen and (max-width: $break-mobile){
+      margin-left: 30%;
+    }
+    @media screen and (max-width: $break-tablet){
+      margin-left: 40%;
+    }
   }
 
   a:hover{
@@ -299,10 +350,16 @@ html {
     display: block;
     margin-bottom: 0;
     padding-bottom: 5px;
+    @media screen and (max-width: $break-mobile){
+      margin-left: 25%;
+    }
+    @media screen and (max-width: $break-tablet){
+      margin-left: 32%;
+    }
   }
 
   a{
-    padding-left: .8em;
+    padding-right: .7em;
     display: inline-block;
     text-decoration: none;
     color: darken($accent-color, 5%);
@@ -313,6 +370,12 @@ html {
   }
 
   a:first-of-type{
-    margin-left: 42%;
+    margin-left: 43%;
+    @media screen and (max-width: $break-mobile){
+      margin-left: 25%;
+    }
+    @media screen and (max-width: $break-tablet){
+      margin-left: 32%;
+    }
   }
 }
