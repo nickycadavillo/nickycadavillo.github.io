@@ -81,6 +81,7 @@ html {
   text-align: center; }
 
 .project-one, .project-two, .project-three, .project-four {
+  font-family: "Lato", sans-serif;
   margin-left: 10%;
   margin-right: 10%; }
   .project-one .col-one-third, .project-two .col-one-third, .project-three .col-one-third, .project-four .col-one-third {
@@ -112,31 +113,70 @@ html {
     max-height: 100%; }
 
 .rider-desc {
+  font-size: 1em;
   color: #34495e; }
 
 .rider-tech {
-  font-size: .9em;
+  font-family: "Ovo", serif;
+  font-size: 1em;
+  letter-spacing: 3px;
   padding-left: 0;
-  color: #e08283;
-  font-family: "Ovo", serif; }
+  color: #abb7b7; }
   .rider-tech li {
     list-style: none;
-    font-family: "Lato", sans-serif; }
+    font-family: "Lato", sans-serif;
+    color: #abb7b7;
+    font-size: .9em;
+    letter-spacing: normal; }
 
 .port-icon {
+  color: #e08283;
+  padding: 5px; }
+
+.port-icon:hover {
   color: #abb7b7; }
 
+#rider-icon {
+  margin-left: 33%; }
+
 .tool-box {
+  padding-top: 1em;
   height: 200px;
-  background-color: #abb7b7; }
+  background-color: #34495e; }
   .tool-box .tools-header {
+    margin-left: 40%;
+    font-weight: 200;
     font-size: 1.5em;
     display: inline;
-    color: #34495e; }
-  .tool-box #tools-first {
-    margin-left: 45%; }
-  .tool-box #tools-of {
+    color: white;
+    letter-spacing: 3px;
     font-family: "Ovo", serif;
     color: #e08283; }
+  .tool-box .tools-list {
+    font-family: "Lato", sans-serif;
+    list-style: none;
+    color: white; }
+    .tool-box .tools-list li {
+      padding: .5em;
+      vertical-align: top;
+      display: inline-block;
+      width: 30%;
+      font-size: 1em; }
+
+.about-section {
+  background-color: white;
+  border: 1px solid white; }
+  .about-section #about-header {
+    font-size: 1.5em;
+    color: #e08283;
+    font-family: "Ovo", serif;
+    letter-spacing: 5px;
+    text-align: center; }
+  .about-section .sum-about-me {
+    font-family: "Lato", sans-serif;
+    color: #34495e;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%; }
 
 /*# sourceMappingURL=styles.css.map */

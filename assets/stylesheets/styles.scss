@@ -8,7 +8,6 @@ $break-mobile: 320px;
 $break-tablet: 700px;
 
 html {
-  // background-color: $primary-color;
   background-image: url(/assets/images/background.jpeg);
   background-size: contain;
 }
@@ -26,9 +25,6 @@ html {
     font-size: 1.2;
     text-transform: uppercase;
     letter-spacing: 3px;
-    // display: inline;
-    // font-family: $serif-font;
-    // font-size: 1.6em;
     color: $secondary-color;
   }
 
@@ -72,7 +68,6 @@ html {
 }
 
 .hero-flat-color{
-  // background-color: rgb(255, 255, 255);
   height: 300px;
 
   .hero-header{
@@ -125,17 +120,14 @@ html {
 }
 
 .project-one {
-  // height: 400px;
-  // border: 1px solid yellow;
+  font-family: $content-font;
   margin-left: 10%;
   margin-right: 10%;
 
   .col-one-third {
-    // border: 1px solid black;
     vertical-align: top;
     display: inline-block;
     width: $width/3;
-    // height: 400px;
     border-top: 3px solid $secondary-color;
     -webkit-column-break-inside: avoid;
     @media screen and (max-width: $break-mobile){
@@ -147,14 +139,11 @@ html {
   }
 
   .col-two-third {
-    // border: 1px solid red;
     vertical-align: top;
     display: inline-block;
     width: $width/3*2;
-    // height: 400px;
     border-top: 3px solid $secondary-color;
     @media screen and (max-width: $break-mobile){
-      // width: $width/3;
       height: 100%;
       width: $width;
     }
@@ -164,8 +153,6 @@ html {
   }
 
   .portfolio-imgs{
-    // height: auto;
-    // width: 100%;
     max-width: 100%;
     max-height: 100%;
   }
@@ -186,42 +173,87 @@ html {
 }
 
 .rider-desc{
+  font-size: 1em;
   color: $primary-color;
 }
 
 .rider-tech{
-  font-size: .9em;
-  padding-left: 0;
-  color: $accent-color;
   font-family: $serif-font;
+  font-size: 1em;
+  letter-spacing: 3px;
+  padding-left: 0;
+  color: $secondary-color;
 
   li{
     list-style: none;
     font-family: $content-font;
+    color: $secondary-color;
+    font-size: .9em;
+    letter-spacing: normal;
   }
 }
 
 .port-icon{
-  // padding: 5px;
+  color: $accent-color;
+  padding: 5px;
+}
+
+.port-icon:hover{
   color: $secondary-color;
 }
 
+#rider-icon{
+  margin-left: 33%;
+}
+
 .tool-box{
+  padding-top: 1em;
   height: 200px;
-  background-color: $secondary-color;
+  background-color: $primary-color;
 
   .tools-header{
+    margin-left: 40%;
+    font-weight: 200;
     font-size: 1.5em;
     display: inline;
-    color: $primary-color;
-  }
-
-  #tools-first{
-    margin-left: 45%;
-  }
-
-  #tools-of{
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
     font-family: $serif-font;
     color: $accent-color;
+  }
+
+  .tools-list{
+    font-family: $content-font;
+    list-style: none;
+    color: rgb(255, 255, 255);
+
+    li{
+      padding: .5em;
+      vertical-align: top;
+      display: inline-block;
+      width: 30%;
+      font-size: 1em;
+    }
+  }
+}
+
+.about-section{
+  background-color: white;
+  border: 1px solid white;
+
+  #about-header{
+    font-size: 1.5em;
+    color: $accent-color;
+    font-family: $serif-font;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .sum-about-me{
+    font-family: $content-font;
+    color: $primary-color;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
   }
 }
