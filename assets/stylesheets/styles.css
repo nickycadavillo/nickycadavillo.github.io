@@ -121,11 +121,11 @@ html {
   font-size: 1em;
   letter-spacing: 3px;
   padding-left: 0;
-  color: #abb7b7; }
+  color: #8a9b9b; }
   .rider-tech li {
     list-style: none;
     font-family: "Lato", sans-serif;
-    color: #abb7b7;
+    color: #8a9b9b;
     font-size: .9em;
     letter-spacing: normal; }
 
@@ -140,7 +140,7 @@ html {
   margin-left: 33%; }
 
 .tool-box {
-  padding-top: 1em;
+  padding-top: 2em;
   height: 200px;
   background-color: #34495e; }
   .tool-box .tools-header {
@@ -163,11 +163,16 @@ html {
       margin-left: 2%;
       margin-top: 1em;
       font-size: 1em; }
+      .tool-box .tools-list li span {
+        float: left;
+        font-size: 110%;
+        margin: 0 10px 50px 0;
+        color: #abb7b7; }
 
 .about-section {
   background-color: white;
-  border: 1px solid white;
-  padding-bottom: 3%; }
+  padding-top: 1.5em;
+  padding-bottom: 5%; }
   .about-section #about-header {
     font-size: 1.5em;
     color: #e08283;
@@ -178,13 +183,18 @@ html {
     font-family: "Lato", sans-serif;
     color: #34495e;
     margin-left: 10%;
-    margin-right: 10%; }
+    margin-right: 10%;
+    margin-bottom: 5%; }
   .about-section a {
+    border-top: 3px solid #abb7b7;
+    border-bottom: 3px solid #abb7b7;
     text-transform: uppercase;
-    color: #e08283;
+    color: #db6e6f;
     text-decoration: none;
     margin-left: 45%;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    padding-top: 1em;
+    padding-bottom: 1em; }
   .about-section a:hover {
     color: #34495e; }
 
