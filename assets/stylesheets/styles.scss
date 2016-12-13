@@ -1,0 +1,318 @@
+$primary-color: rgb(52, 73, 94);
+$secondary-color: rgb(171, 183, 183);
+$accent-color: rgb(224, 130, 131);
+$content-font: 'Lato', sans-serif;
+$serif-font: 'Ovo', serif;
+$width: 99%;
+$break-mobile: 320px;
+$break-tablet: 700px;
+
+html {
+  background-image: url(/assets/images/background.jpeg);
+  background-size: contain;
+}
+
+.name-container{
+  width: $width/2;
+  display: inline-block;
+  margin-left: 3px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+
+  #header-lname{
+    padding-left: 3px;
+    display: inline;
+    font-size: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $secondary-color;
+  }
+
+  #header-fname{
+    letter-spacing: 3px;
+    display: inline;
+    font-family: $serif-font;
+    font-size: 1.4em;
+    color: $accent-color;
+  }
+}
+
+.nav-bar {
+  display: inline-block;
+  width: $width/2;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 2px;
+
+  a{
+    letter-spacing: 3px;
+    margin-left: 2em;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: $secondary-color;
+  }
+
+  i {
+    color: $accent-color;
+  }
+
+  i:hover{
+    color: $secondary-color;
+  }
+}
+
+.hero-flat-color{
+  height: 300px;
+
+  .hero-header{
+    padding-top: 100px;
+  }
+
+  .hero-text{
+    color: $primary-color;
+    -webkit-animation: typing 10s steps(33, end);
+    -moz-animation: typing 10s steps(33, end);
+    animation: typing 10s steps(33, end);
+  }
+
+  #hero-i {
+    display: inline;
+    margin-left: 60%;
+    padding-right: .2em;
+    font-family: $content-font;
+    font-size: 2.1em;
+  }
+
+  #hero-dev {
+    display: inline;
+    font-family: $serif-font;
+    font-size: 2.2em;
+    color: white;
+  }
+
+  #hero-web {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 60%;
+    font-family: $content-font;
+    font-size: 2.1em;
+  }
+
+}
+
+// contains portfolio pieces
+.portfolio-cont{
+  padding-top: 10px;
+  background-color: white;
+}
+
+.portfolio-header{
+  color: $accent-color;
+  font-family: $serif-font;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.project-one {
+  font-family: $content-font;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  .col-one-third {
+    vertical-align: top;
+    display: inline-block;
+    width: $width/3;
+    border-top: 3px solid $secondary-color;
+    -webkit-column-break-inside: avoid;
+    @media screen and (max-width: $break-mobile){
+      width: $width;
+    }
+    @media screen and (max-width: $break-tablet){
+      width: $width;
+    }
+  }
+
+  .col-two-third {
+    vertical-align: top;
+    display: inline-block;
+    width: $width/3*2;
+    border-top: 3px solid $secondary-color;
+    @media screen and (max-width: $break-mobile){
+      height: 100%;
+      width: $width;
+    }
+    @media screen and (max-width: $break-tablet){
+      width: $width;
+    }
+  }
+
+  .portfolio-imgs{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+}
+
+.project-two {
+  @extend .project-one
+}
+
+.project-three {
+  @extend .project-one
+}
+
+.project-four{
+  @extend .project-one
+
+}
+
+.rider-desc{
+  font-size: 1em;
+  color: $primary-color;
+}
+
+.rider-tech{
+  font-family: $serif-font;
+  font-size: 1em;
+  letter-spacing: 3px;
+  padding-left: 0;
+  color: darken($secondary-color, 12%);
+
+  li{
+    list-style: none;
+    font-family: $content-font;
+    color: darken($secondary-color, 12%);
+    font-size: .9em;
+    letter-spacing: normal;
+  }
+}
+
+.port-icon{
+  color: $accent-color;
+  padding: 5px;
+}
+
+.port-icon:hover{
+  color: $secondary-color;
+}
+
+#rider-icon{
+  margin-left: 33%;
+}
+
+.tool-box{
+  padding-top: 2em;
+  height: 200px;
+  background-color: $primary-color;
+
+  .tools-header{
+    margin-left: 40%;
+    font-weight: 200;
+    font-size: 1.5em;
+    display: inline;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    font-family: $serif-font;
+    color: $accent-color;
+  }
+
+  .tools-list{
+    font-family: $content-font;
+    list-style: none;
+    color: rgb(255, 255, 255);
+
+    li{
+      vertical-align: top;
+      display: inline-block;
+      width: 30%;
+      margin-left: 2%;
+      margin-top: 1em;
+      font-size: 1em;
+
+      span{
+        float: left;
+        font-size: 110%;
+        margin: 0 10px 50px 0;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.about-section{
+  background-color: white;
+  // border: 1px solid white;
+  padding-top: 1.5em;
+  padding-bottom: 5%;
+
+  #about-header{
+    font-size: 1.5em;
+    color: $accent-color;
+    font-family: $serif-font;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .sum-about-me{
+    font-family: $content-font;
+    color: $primary-color;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+
+  a{
+    border-top: 3px solid $secondary-color;
+    border-bottom: 3px solid $secondary-color;
+    text-transform: uppercase;
+    color: darken($accent-color, 5%);
+    text-decoration: none;
+    margin-left: 45%;
+    letter-spacing: 3px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  a:hover{
+    color: $primary-color;
+  }
+}
+
+.footer {
+  margin-top: 0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  background-color: lighten($secondary-color, 21%);
+  text-transform: uppercase;
+
+  h3 {
+    font-size: .9em;
+    letter-spacing: 3px;
+    color: $primary-color;
+    margin-left: 43%;
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+
+  a{
+    padding-left: .8em;
+    display: inline-block;
+    text-decoration: none;
+    color: darken($accent-color, 5%);
+  }
+
+  a:hover{
+    color: $primary-color;
+  }
+
+  a:first-of-type{
+    margin-left: 42%;
+  }
+}
