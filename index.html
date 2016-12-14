@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Nicky Cadavillo</title>
+        <title>Nicky Cadavillo Front End Developer</title>
         <link rel="stylesheet" href="assets/stylesheets/normalize.css">
         <link rel="stylesheet" href="assets/stylesheets/styles.css">
         <link href='https://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
@@ -12,18 +12,20 @@
       </head>
     <body ng-app = "portfolioApp">
       <header class = 'main-header'>
-        <div class = "name-container"><p id = "header-fname" class="header-name">nicky</p><p id="header-lname" class="header=name">cadavillo</p>
-          <!-- <a href="http://www.linkedin.com/in/nicolecadavillo"><i class="fa fa-linkedin fa-1x"></i></a> -->
-          <!-- <a href="http://www.github.com/nickycadavillo"><i class="fa fa-github-alt"></i></a> -->
+        <div class = "name-container">
+          <div id = "name-border-top"></div>
+          <p id = "header-fname" class="header-name">nicky</p><p id="header-lname" class="header=name">cadavillo</p>
+          <div id = "name-border-bottom">
+            <small>front end developer</small>
+          </div>
         </div>
         <nav class = "nav-bar">
           <a href="" class = "about-me">about me</a>
           <a href="" class = "portfolio-btn">portfolio</a>
           <a href="nicky_cadavillo_resume.pdf" class = "resume-btn">resume</a>
-          <a href="mailto:nicoleacadavillo@gmail.com" class = "contact-btn">contact</a>
-          <i class="fa fa-envelope-o"></i>
-          <a href="http://www.linkedin.com/in/nicolecadavillo"><i class="fa fa-linkedin fa-1x"></i></a>
-          <a href="http://www.github.com/nickycadavillo"><i class="fa fa-github-alt"></i></a>
+          <a href="mailto:nicoleacadavillo@gmail.com" class = "contact-btn"><i class="fa fa-envelope-o fa-1.8x"></i></a>
+          <a href="http://www.linkedin.com/in/nicolecadavillo"><i class="fa fa-linkedin fa-1.8x"></i></a>
+          <a href="http://www.github.com/nickycadavillo"><i class="fa fa-github-alt fa-1.8x"></i></a>
         </nav>
       </header>
 
@@ -31,12 +33,15 @@
     </ng-view>
 
     <footer class = "footer">
-      <h3 class = "footer" >Get in touch</h3>
-      <a class = "footer-links" href="mailto:nicoleacadavillo@gmail.com"><i class="fa fa-envelope-o"></i></a>
-      <a class = "footer-links" href="http://www.linkedin.com/in/nicolecadavillo"><i class="fa fa-linkedin fa-1x"></i></a>
-      <a class = "footer-links" href="http://www.github.com/nickycadavillo"><i class="fa fa-github-alt"></i></a>
-      <a class = "footer-links" href="http://thenewpalette.github.io"><i class="fa fa-rss" aria-hidden="true"></i></a>
-      <a class = "footer-links" href="https://twitter.com/nickycadavillo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <!-- <div> -->
+        <h3 class = "footer" >Get in touch</h3>
+        <a class = "footer-links" href="mailto:nicoleacadavillo@gmail.com"><i class="fa fa-envelope-o"></i></a>
+        <a class = "footer-links" href="http://www.linkedin.com/in/nicolecadavillo"><i class="fa fa-linkedin fa-1x"></i></a>
+        <a class = "footer-links" href="http://www.github.com/nickycadavillo"><i class="fa fa-github-alt"></i></a>
+        <a class = "footer-links" href="http://thenewpalette.github.io"><i class="fa fa-rss" aria-hidden="true"></i></a>
+        <a class = "footer-links" href="https://twitter.com/nickycadavillo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <!-- </div> -->
+    <small>developed and designed by Nicky Cadavillo</small>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>

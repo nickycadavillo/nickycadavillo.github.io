@@ -11,15 +11,46 @@ html, body {
   background-image: url(/assets/images/background.jpeg);
   background-size: contain;
   overflow-x: hidden;
-  width: 100%;
+  background-repeat:no-repeat;
+}
+
+.main-header{
+  width: $width;
+  display: inline-flex;
+  vertical-align: top;
 }
 
 .name-container{
-  width: $width/2;
+  width: $width/2-1;
   display: inline-block;
-  margin-left: 3px;
-  margin-top: 10px;
+  margin-left: 5px;
   color: rgb(255, 255, 255);
+
+  #name-border-top{
+    margin-top: 5px;
+    margin-left: 1em;
+    width: 150px;
+    height: 1em;
+    border-top: 2px solid $secondary-color;
+    border-right: 2px solid $secondary-color;
+    border-left: 2px solid $secondary-color;
+  }
+
+  #name-border-bottom{
+    padding-bottom: .5em;
+    margin-left: 1em;
+    width: 150px;
+    height: 1em;
+    border-right: 2px solid $secondary-color;
+    border-bottom: 2px solid $secondary-color;
+    border-left: 2px solid $secondary-color;
+  }
+
+  small{
+    font-size: .65em;
+    margin-left: 2em;
+    display: inline-block;
+  }
 
   #header-lname{
     padding-left: 3px;
@@ -41,12 +72,15 @@ html, body {
 
 .nav-bar {
   display: inline-block;
-  width: $width/2;
+  width: $width/2-1;
   font-size: .8em;
   text-transform: uppercase;
   text-align: right;
-  margin-top: 10px;
   margin-right: 2px;
+  margin-top: 5px;
+  // @media screen and (max-width: $break-tablet){
+  //   font-size: .8em;
+  // }
 
   a{
     letter-spacing: 3px;
@@ -54,14 +88,17 @@ html, body {
     color: rgb(255, 255, 255);
     width: 100px;
     text-decoration: none;
+    // @media screen and (max-width: $break-tablet){
+    //   font-size: .8em;
+    // }
   }
 
   a:hover{
-    color: $secondary-color;
+    color: $accent-color;
   }
 
   i {
-    color: $accent-color;
+    color: rgb(255, 255, 255);
   }
 
   i:hover{
@@ -343,11 +380,12 @@ html, body {
   text-transform: uppercase;
 
   h3 {
+    float: right;
     font-size: .9em;
     letter-spacing: 3px;
     color: $primary-color;
-    margin-left: 43%;
-    display: block;
+    // margin-left: 43%;
+    display: inline-block;
     margin-bottom: 0;
     padding-bottom: 5px;
     @media screen and (max-width: $break-mobile){
@@ -359,6 +397,8 @@ html, body {
   }
 
   a{
+    float: right;
+    border: 1px solid black;
     padding-right: .7em;
     display: inline-block;
     text-decoration: none;
@@ -370,12 +410,20 @@ html, body {
   }
 
   a:first-of-type{
-    margin-left: 43%;
+    // margin-left: 43%;
     @media screen and (max-width: $break-mobile){
       margin-left: 25%;
     }
     @media screen and (max-width: $break-tablet){
       margin-left: 32%;
     }
+  }
+
+  small {
+    float: left;
+    border: 1px solid black;
+    font-size: .6em;
+    display: inline-block;
+    color: $accent-color;
   }
 }
