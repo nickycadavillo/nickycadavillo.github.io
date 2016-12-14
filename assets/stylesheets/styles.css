@@ -273,43 +273,58 @@ html, body {
 .footer {
   margin-top: 0;
   padding-bottom: 1em;
-  padding-top: 1em;
+  padding-top: 10px;
   background-color: #e5e8e8;
   text-transform: uppercase; }
   .footer h3 {
-    float: right;
+    width: 24.75%;
     font-size: .9em;
     letter-spacing: 3px;
     color: #34495e;
-    display: inline-block;
-    margin-bottom: 0;
-    padding-bottom: 5px; }
+    margin-left: 75%;
+    padding-bottom: 0;
+    margin-bottom: 0; }
     @media screen and (max-width: 420px) {
       .footer h3 {
-        margin-left: 25%; } }
+        margin-left: 25%;
+        width: 49.5%; } }
     @media screen and (max-width: 700px) {
       .footer h3 {
-        margin-left: 32%; } }
+        margin-left: 35%;
+        width: 49.5%;
+        display: block; } }
   .footer a {
-    float: right;
-    border: 1px solid black;
     padding-right: .7em;
     display: inline-block;
     text-decoration: none;
     color: #db6e6f; }
   .footer a:hover {
     color: #34495e; }
-  @media screen and (max-width: 420px) {
-    .footer a:first-of-type {
-      margin-left: 25%; } }
-  @media screen and (max-width: 700px) {
-    .footer a:first-of-type {
-      margin-left: 32%; } }
-  .footer small {
+  .footer a:first-of-type {
+    margin-left: 75%; }
+    @media screen and (max-width: 420px) {
+      .footer a:first-of-type {
+        margin-left: 25%; } }
+    @media screen and (max-width: 700px) {
+      .footer a:first-of-type {
+        margin-left: 35%; } }
+  .footer subscript {
+    margin-left: 10%;
+    padding-top: 10px;
     float: left;
-    border: 1px solid black;
-    font-size: .6em;
-    display: inline-block;
+    font-size: .8em;
+    width: 20%;
     color: #e08283; }
+    @media screen and (max-width: 420px) {
+      .footer subscript {
+        width: 20%;
+        display: block;
+        font-size: .6em; } }
+    @media screen and (max-width: 700px) {
+      .footer subscript {
+        display: block;
+        width: 100%;
+        margin-left: 20%;
+        padding-bottom: 1em; } }
 
 /*# sourceMappingURL=styles.css.map */
