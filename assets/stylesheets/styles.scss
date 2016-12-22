@@ -4,20 +4,55 @@ $accent-color: rgb(224, 130, 131);
 $content-font: 'Lato', sans-serif;
 $serif-font: 'Ovo', serif;
 $width: 99%;
-$break-mobile: 320px;
-$break-tablet: 700px;
+$break-mobile: 425px;
+$break-tablet: 770px;
 
-html {
+html, body {
   background-image: url(/assets/images/background.jpeg);
   background-size: contain;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+}
+
+.main-header{
+  width: $width;
+  display: inline-flex;
+  vertical-align: top;
+  margin-top: 1em;
 }
 
 .name-container{
-  width: $width/2;
+  width: $width/2-1;
   display: inline-block;
-  margin-left: 3px;
-  margin-top: 10px;
+  margin-left: 1em;
   color: rgb(255, 255, 255);
+
+  #name-border-top{
+    margin-top: 5px;
+    margin-left: 1em;
+    width: 150px;
+    height: 1em;
+    border-top: 2px solid $secondary-color;
+    border-right: 2px solid $secondary-color;
+    border-left: 2px solid $secondary-color;
+  }
+
+  #name-border-bottom{
+    padding-bottom: .5em;
+    margin-left: 1em;
+    width: 150px;
+    height: 1em;
+    border-right: 2px solid $secondary-color;
+    border-bottom: 2px solid $secondary-color;
+    border-left: 2px solid $secondary-color;
+  }
+
+  sup{
+    color: white;
+    font-size: .65em;
+    margin-left: 2em;
+    display: inline-block;
+  }
 
   #header-lname{
     padding-left: 3px;
@@ -25,26 +60,34 @@ html {
     font-size: 1.2;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: $secondary-color;
+    color: $primary-color;
+    // color: lighten($accent-color, 6%);
+
   }
 
   #header-fname{
-    letter-spacing: 3px;
+    padding-right: 3px;
     display: inline;
-    font-family: $serif-font;
-    font-size: 1.4em;
-    color: $accent-color;
+    font-size: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    // color: $primary-color;
+    color: lighten($accent-color, 6%);
+
   }
 }
 
 .nav-bar {
   display: inline-block;
-  width: $width/2;
+  width: $width/2-1;
   font-size: .8em;
   text-transform: uppercase;
   text-align: right;
-  margin-top: 10px;
   margin-right: 2px;
+  margin-top: 5px;
+  // @media screen and (max-width: $break-tablet){
+  //   font-size: .8em;
+  // }
 
   a{
     letter-spacing: 3px;
@@ -52,14 +95,17 @@ html {
     color: rgb(255, 255, 255);
     width: 100px;
     text-decoration: none;
+    // @media screen and (max-width: $break-tablet){
+    //   font-size: .8em;
+    // }
   }
 
   a:hover{
-    color: $secondary-color;
+    color: $accent-color;
   }
 
   i {
-    color: $accent-color;
+    color: rgb(255, 255, 255);
   }
 
   i:hover{
@@ -69,39 +115,77 @@ html {
 
 .hero-flat-color{
   height: 300px;
+  @media screen and (max-width: $break-tablet){
+    height: 150px;
+  }
+  @media screen and (max-width: $break-mobile){
+    height: 65px;
+  }
 
   .hero-header{
-    padding-top: 100px;
+    padding-right: 10px;
+    // border: 1px solid black;
+    padding-top: 70px;
+    @media screen and (max-width: $break-tablet){
+      padding-top: 20px;
+    }
+    @media screen and (max-width: $break-mobile){
+      padding-top: 15px;
+    }
   }
 
   .hero-text{
     color: $primary-color;
-    -webkit-animation: typing 10s steps(33, end);
-    -moz-animation: typing 10s steps(33, end);
-    animation: typing 10s steps(33, end);
+    // -webkit-animation: typing 10s steps(33, end);
+    // -moz-animation: typing 10s steps(33, end);
+    // animation: typing 10s steps(33, end);
   }
 
   #hero-i {
     display: inline;
-    margin-left: 60%;
+    margin-left: 57%;
     padding-right: .2em;
     font-family: $content-font;
-    font-size: 2.1em;
+    font-size: 2em;
+    @media screen and (max-width: $break-tablet){
+      font-size: 1.2em;
+      margin-left: 60%;
+    }
+    @media screen and (max-width: $break-mobile){
+      font-size: 1em;
+      color: rgb(255, 255, 255);
+    }
   }
 
   #hero-dev {
     display: inline;
     font-family: $serif-font;
-    font-size: 2.2em;
-    color: white;
+    font-size: 2.1em;
+    color: rgb(255, 255, 255);
+    @media screen and (max-width: $break-tablet){
+      font-size: 1.3em;
+    }
+    @media screen and (max-width: $break-mobile){
+      font-size: 1em;
+    }
   }
 
   #hero-web {
+    display: inline;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 60%;
+    margin-left: 57%;
     font-family: $content-font;
-    font-size: 2.1em;
+    font-size: 2em;
+    @media screen and (max-width: $break-tablet){
+      font-size: 1.2em;
+      margin-left: 60%;
+
+    }
+    @media screen and (max-width: $break-mobile){
+      font-size: 1em;
+      color: rgb(255, 255, 255);
+    }
   }
 
 }
@@ -160,15 +244,15 @@ html {
 }
 
 .project-two {
-  @extend .project-one
+  @extend .project-one;
 }
 
 .project-three {
-  @extend .project-one
+  @extend .project-one;
 }
 
 .project-four{
-  @extend .project-one
+  @extend .project-one;
 
 }
 
@@ -204,11 +288,15 @@ html {
 
 #rider-icon{
   margin-left: 33%;
+  @media screen and (max-width: $break-tablet){
+    margin-left: 40%;
+  }
 }
 
 .tool-box{
-  padding-top: 2em;
-  height: 200px;
+  padding-top: 1.5em;
+  height: auto;
+  padding-bottom: 1em;
   background-color: $primary-color;
 
   .tools-header{
@@ -220,6 +308,12 @@ html {
     letter-spacing: 3px;
     font-family: $serif-font;
     color: $accent-color;
+    @media screen and (max-width: $break-tablet){
+      margin-left: 5%;
+    }
+    @media screen and (max-width: $break-mobile){
+      margin-left: 10%;
+    }
   }
 
   .tools-list{
@@ -233,13 +327,37 @@ html {
       width: 30%;
       margin-left: 2%;
       margin-top: 1em;
-      font-size: 1em;
+      font-size: .87em;
+      @media screen and (max-width: $break-mobile){
+        margin-left: 0;
+        display: block;
+        width: 90%;
+        margin-right: 2%;
+      }
+      @media screen and (max-width: $break-tablet){
+        margin-left: 0;
+        display: block;
+        width: 90%;
+        margin-right: 2%;
+      }
 
       span{
         float: left;
-        font-size: 110%;
-        margin: 0 10px 50px 0;
+        font-size: 115%;
+        margin: 0 10px 90px 0;
         color: $secondary-color;
+        @media screen and (max-width: $break-mobile){
+          float: left;
+          font-size: 100%;
+          margin: 0 6px 0 0;
+          font-size: 1em;
+        }
+        @media screen and (max-width: $break-tablet){
+          float: left;
+          font-size: 100%;
+          margin: 0 5px 0 0;
+          font-size: 1em;
+        }
       }
     }
   }
@@ -247,12 +365,19 @@ html {
 
 .about-section{
   background-color: white;
-  // border: 1px solid white;
   padding-top: 1.5em;
   padding-bottom: 5%;
+  @media screen and (max-width: $break-mobile){
+    padding-bottom: 10%;
+  }
+  @media screen and (max-width: $break-tablet){
+    padding-bottom: 10%;
+  }
 
   #about-header{
     font-size: 1.5em;
+    padding-right: 3%;
+    padding-left: 3%;
     color: $accent-color;
     font-family: $serif-font;
     letter-spacing: 5px;
@@ -265,6 +390,12 @@ html {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
+    @media screen and (max-width: $break-mobile){
+      margin-bottom: 10%;
+    }
+    @media screen and (max-width: $break-tablet){
+      margin-bottom: 10%;
+    }
   }
 
   a{
@@ -277,6 +408,12 @@ html {
     letter-spacing: 3px;
     padding-top: 1em;
     padding-bottom: 1em;
+    @media screen and (max-width: $break-tablet){
+      margin-left: 43%;
+    }
+    @media screen and (max-width: $break-mobile){
+      margin-left: 35%;
+    }
   }
 
   a:hover{
@@ -287,25 +424,36 @@ html {
 .footer {
   margin-top: 0;
   padding-bottom: 1em;
-  padding-top: 1em;
+  padding-top: 10px;
   background-color: lighten($secondary-color, 21%);
   text-transform: uppercase;
 
   h3 {
+    width: $width/4;
     font-size: .9em;
     letter-spacing: 3px;
     color: $primary-color;
-    margin-left: 43%;
-    display: block;
+    // margin-left: 43%;
+    margin-left: 75%;
+    padding-bottom: 0;
     margin-bottom: 0;
-    padding-bottom: 5px;
+    @media screen and (max-width: $break-tablet){
+      margin-left: 40%;
+      width: $width/2;
+      display: block;
+    }
+    @media screen and (max-width: $break-mobile){
+      margin-left: 28%;
+      width: $width/2;
+    }
   }
 
   a{
-    padding-left: .8em;
+    padding-right: .7em;
     display: inline-block;
     text-decoration: none;
     color: darken($accent-color, 5%);
+
   }
 
   a:hover{
@@ -313,6 +461,31 @@ html {
   }
 
   a:first-of-type{
-    margin-left: 42%;
+    margin-left: 75%;
+    @media screen and (max-width: $break-tablet){
+      margin-left: 40%;
+    }
+    @media screen and (max-width: $break-mobile){
+      margin-left: 28%;
+    }
+  }
+
+  sub {
+    margin-left: 10%;
+    padding-top: 10px;
+    float: left;
+    font-size: .7em;
+    color: $accent-color;
+    @media screen and (max-width: $break-tablet){
+      width: 100%;
+      margin-left: 28%;
+      padding-bottom: 1em;
+    }
+    @media screen and (max-width: $break-mobile){
+      text-align: center;
+      width: 80%;
+      margin-left: 10%;
+      font-size: .6em;
+    }
   }
 }
