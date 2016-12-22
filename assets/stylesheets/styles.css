@@ -7,12 +7,13 @@ html, body {
 .main-header {
   width: 99%;
   display: inline-flex;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-top: 1em; }
 
 .name-container {
   width: 48.5%;
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 1em;
   color: white; }
   .name-container #name-border-top {
     margin-top: 5px;
@@ -30,7 +31,8 @@ html, body {
     border-right: 2px solid #abb7b7;
     border-bottom: 2px solid #abb7b7;
     border-left: 2px solid #abb7b7; }
-  .name-container small {
+  .name-container sup {
+    color: white;
     font-size: .65em;
     margin-left: 2em;
     display: inline-block; }
@@ -40,13 +42,14 @@ html, body {
     font-size: 1.2;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #abb7b7; }
+    color: #34495e; }
   .name-container #header-fname {
-    letter-spacing: 3px;
+    padding-right: 3px;
     display: inline;
-    font-family: "Ovo", serif;
-    font-size: 1.4em;
-    color: #e08283; }
+    font-size: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #e69b9b; }
 
 .nav-bar {
   display: inline-block;
@@ -71,27 +74,63 @@ html, body {
 
 .hero-flat-color {
   height: 300px; }
+  @media screen and (max-width: 770px) {
+    .hero-flat-color {
+      height: 150px; } }
+  @media screen and (max-width: 425px) {
+    .hero-flat-color {
+      height: 65px; } }
   .hero-flat-color .hero-header {
-    padding-top: 100px; }
+    padding-right: 10px;
+    padding-top: 70px; }
+    @media screen and (max-width: 770px) {
+      .hero-flat-color .hero-header {
+        padding-top: 20px; } }
+    @media screen and (max-width: 425px) {
+      .hero-flat-color .hero-header {
+        padding-top: 15px; } }
   .hero-flat-color .hero-text {
     color: #34495e; }
   .hero-flat-color #hero-i {
     display: inline;
-    margin-left: 60%;
+    margin-left: 57%;
     padding-right: .2em;
     font-family: "Lato", sans-serif;
-    font-size: 2.1em; }
+    font-size: 2em; }
+    @media screen and (max-width: 770px) {
+      .hero-flat-color #hero-i {
+        font-size: 1.2em;
+        margin-left: 60%; } }
+    @media screen and (max-width: 425px) {
+      .hero-flat-color #hero-i {
+        font-size: 1em;
+        color: white; } }
   .hero-flat-color #hero-dev {
     display: inline;
     font-family: "Ovo", serif;
-    font-size: 2.2em;
+    font-size: 2.1em;
     color: white; }
+    @media screen and (max-width: 770px) {
+      .hero-flat-color #hero-dev {
+        font-size: 1.3em; } }
+    @media screen and (max-width: 425px) {
+      .hero-flat-color #hero-dev {
+        font-size: 1em; } }
   .hero-flat-color #hero-web {
+    display: inline;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 60%;
+    margin-left: 57%;
     font-family: "Lato", sans-serif;
-    font-size: 2.1em; }
+    font-size: 2em; }
+    @media screen and (max-width: 770px) {
+      .hero-flat-color #hero-web {
+        font-size: 1.2em;
+        margin-left: 60%; } }
+    @media screen and (max-width: 425px) {
+      .hero-flat-color #hero-web {
+        font-size: 1em;
+        color: white; } }
 
 .portfolio-cont {
   padding-top: 10px;
@@ -113,10 +152,10 @@ html, body {
     width: 33%;
     border-top: 3px solid #abb7b7;
     -webkit-column-break-inside: avoid; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 425px) {
       .project-one .col-one-third, .project-two .col-one-third, .project-three .col-one-third, .project-four .col-one-third {
         width: 99%; } }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .project-one .col-one-third, .project-two .col-one-third, .project-three .col-one-third, .project-four .col-one-third {
         width: 99%; } }
   .project-one .col-two-third, .project-two .col-two-third, .project-three .col-two-third, .project-four .col-two-third {
@@ -124,11 +163,11 @@ html, body {
     display: inline-block;
     width: 66%;
     border-top: 3px solid #abb7b7; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 425px) {
       .project-one .col-two-third, .project-two .col-two-third, .project-three .col-two-third, .project-four .col-two-third {
         height: 100%;
         width: 99%; } }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .project-one .col-two-third, .project-two .col-two-third, .project-three .col-two-third, .project-four .col-two-third {
         width: 99%; } }
   .project-one .portfolio-imgs, .project-two .portfolio-imgs, .project-three .portfolio-imgs, .project-four .portfolio-imgs {
@@ -161,11 +200,14 @@ html, body {
 
 #rider-icon {
   margin-left: 33%; }
+  @media screen and (max-width: 770px) {
+    #rider-icon {
+      margin-left: 40%; } }
 
 .tool-box {
   padding-top: 1.5em;
   height: auto;
-  padding-bottom: 1.5em;
+  padding-bottom: 1em;
   background-color: #34495e; }
   .tool-box .tools-header {
     margin-left: 40%;
@@ -176,10 +218,10 @@ html, body {
     letter-spacing: 3px;
     font-family: "Ovo", serif;
     color: #e08283; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 770px) {
       .tool-box .tools-header {
         margin-left: 5%; } }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 425px) {
       .tool-box .tools-header {
         margin-left: 10%; } }
   .tool-box .tools-list {
@@ -192,29 +234,31 @@ html, body {
       width: 30%;
       margin-left: 2%;
       margin-top: 1em;
-      font-size: 1em; }
-      @media screen and (max-width: 420px) {
+      font-size: .87em; }
+      @media screen and (max-width: 425px) {
         .tool-box .tools-list li {
           margin-left: 0;
           display: block;
           width: 90%;
           margin-right: 2%; } }
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 770px) {
         .tool-box .tools-list li {
-          font-size: 1em; } }
+          margin-left: 0;
+          display: block;
+          width: 90%;
+          margin-right: 2%; } }
       .tool-box .tools-list li span {
         float: left;
-        font-size: 110%;
-        margin: 0 10px 60px 0;
+        font-size: 115%;
+        margin: 0 10px 90px 0;
         color: #abb7b7; }
-        @media screen and (max-width: 420px) {
+        @media screen and (max-width: 425px) {
           .tool-box .tools-list li span {
-            text-transform: uppercase;
             float: left;
             font-size: 100%;
             margin: 0 6px 0 0;
             font-size: 1em; } }
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 770px) {
           .tool-box .tools-list li span {
             float: left;
             font-size: 100%;
@@ -225,10 +269,10 @@ html, body {
   background-color: white;
   padding-top: 1.5em;
   padding-bottom: 5%; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 425px) {
     .about-section {
       padding-bottom: 10%; } }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     .about-section {
       padding-bottom: 10%; } }
   .about-section #about-header {
@@ -245,10 +289,10 @@ html, body {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 425px) {
       .about-section .sum-about-me {
         margin-bottom: 10%; } }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .about-section .sum-about-me {
         margin-bottom: 10%; } }
   .about-section a {
@@ -261,12 +305,12 @@ html, body {
     letter-spacing: 3px;
     padding-top: 1em;
     padding-bottom: 1em; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 770px) {
       .about-section a {
-        margin-left: 30%; } }
-    @media screen and (max-width: 700px) {
+        margin-left: 43%; } }
+    @media screen and (max-width: 425px) {
       .about-section a {
-        margin-left: 40%; } }
+        margin-left: 35%; } }
   .about-section a:hover {
     color: #34495e; }
 
@@ -284,15 +328,15 @@ html, body {
     margin-left: 75%;
     padding-bottom: 0;
     margin-bottom: 0; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 770px) {
       .footer h3 {
-        margin-left: 25%;
-        width: 49.5%; } }
-    @media screen and (max-width: 700px) {
-      .footer h3 {
-        margin-left: 35%;
+        margin-left: 40%;
         width: 49.5%;
         display: block; } }
+    @media screen and (max-width: 425px) {
+      .footer h3 {
+        margin-left: 28%;
+        width: 49.5%; } }
   .footer a {
     padding-right: .7em;
     display: inline-block;
@@ -302,29 +346,28 @@ html, body {
     color: #34495e; }
   .footer a:first-of-type {
     margin-left: 75%; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 770px) {
       .footer a:first-of-type {
-        margin-left: 25%; } }
-    @media screen and (max-width: 700px) {
+        margin-left: 40%; } }
+    @media screen and (max-width: 425px) {
       .footer a:first-of-type {
-        margin-left: 35%; } }
-  .footer subscript {
+        margin-left: 28%; } }
+  .footer sub {
     margin-left: 10%;
     padding-top: 10px;
     float: left;
-    font-size: .8em;
-    width: 20%;
+    font-size: .7em;
     color: #e08283; }
-    @media screen and (max-width: 420px) {
-      .footer subscript {
-        width: 20%;
-        display: block;
-        font-size: .6em; } }
-    @media screen and (max-width: 700px) {
-      .footer subscript {
-        display: block;
+    @media screen and (max-width: 770px) {
+      .footer sub {
         width: 100%;
-        margin-left: 20%;
+        margin-left: 28%;
         padding-bottom: 1em; } }
+    @media screen and (max-width: 425px) {
+      .footer sub {
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        font-size: .6em; } }
 
 /*# sourceMappingURL=styles.css.map */
