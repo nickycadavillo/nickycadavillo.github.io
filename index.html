@@ -11,7 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
       </head>
     <body ng-app = "portfolioApp" ng-controller = "ScrollController">
-    <!-- <body ng-app = "portfolioApp"> -->
       <header class = 'main-header'>
         <div class = "name-container">
           <div id = "name-border-top"></div>
@@ -21,10 +20,9 @@
           </div>
         </div>
         <nav class = "nav-bar">
-          <!-- <a ng-click = "scrollTo('about-nicky')" class = "about-me">about me</a> -->
           <a href="#home#about-nicky" target="_self" class = "about-me">about me</a>
-          <!-- <a ng-click = "scrollTo('land-about-me')" class = "about-me">about me</a> -->
           <a href="#home#portfolio" target="_self" class = "portfolio-btn">portfolio</a>
+          <!-- anchor links example:  http://stackoverflow.com/questions/14026537/anchor-links-in-angularjs?noredirect=1&lq=1 -->
           <a href="nicky_cadavillo_resume.pdf" class = "resume-btn">resume</a>
           <a href="mailto:nicoleacadavillo@gmail.com" class = "contact-btn"><i class="fa fa-envelope-o fa-1.8x"></i></a>
           <a href="http://www.linkedin.com/in/nicolecadavillo"><i class="fa fa-linkedin fa-1.8x"></i></a>
