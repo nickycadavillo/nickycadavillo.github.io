@@ -85,9 +85,6 @@ html, body {
   text-align: right;
   margin-right: 2px;
   margin-top: 5px;
-  // @media screen and (max-width: $break-tablet){
-  //   font-size: .8em;
-  // }
 
   a{
     letter-spacing: 3px;
@@ -110,6 +107,31 @@ html, body {
 
   i:hover{
     color: $secondary-color;
+  }
+} // closes nav-bar
+
+
+.nav-bar.hamburger{
+  @media screen and (max-width: $break-tablet){
+    display: none;
+  }
+  @media screen and (max-width: $break-mobile){
+    display: none;
+  }
+}
+
+#burger-icon{
+  display: none;
+
+  @media screen and (max-width: $break-tablet){
+    display: inline-block;
+    float: right;
+    color: white;
+  }
+  @media screen and (max-width: $break-mobile){
+    display: inline-block;
+    float: right;
+    color: white;
   }
 }
 
@@ -188,9 +210,9 @@ html, body {
     }
   }
 
-}
+} // closes hero-flat-color
 
-// contains portfolio pieces
+// below contains portfolio pieces
 .portfolio-cont{
   padding-top: 10px;
   background-color: white;

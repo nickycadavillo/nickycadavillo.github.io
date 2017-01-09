@@ -72,6 +72,26 @@ html, body {
   .nav-bar i:hover {
     color: #abb7b7; }
 
+@media screen and (max-width: 770px) {
+  .nav-bar.hamburger {
+    display: none; } }
+@media screen and (max-width: 425px) {
+  .nav-bar.hamburger {
+    display: none; } }
+
+#burger-icon {
+  display: none; }
+  @media screen and (max-width: 770px) {
+    #burger-icon {
+      display: inline-block;
+      float: right;
+      color: white; } }
+  @media screen and (max-width: 425px) {
+    #burger-icon {
+      display: inline-block;
+      float: right;
+      color: white; } }
+
 .hero-flat-color {
   height: 300px; }
   @media screen and (max-width: 770px) {
