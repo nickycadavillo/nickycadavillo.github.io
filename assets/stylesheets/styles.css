@@ -6,9 +6,12 @@ html, body {
 
 .main-header {
   width: 99%;
-  display: inline-flex;
+  display: inline-block;
   vertical-align: top;
   margin-top: 1em; }
+  @media screen and (max-width: 800px) {
+    .main-header {
+      height: 50px; } }
 
 .name-container {
   width: 48.5%;
@@ -58,7 +61,10 @@ html, body {
   text-transform: uppercase;
   text-align: right;
   margin-right: 2px;
-  margin-top: 5px; }
+  vertical-align: top; }
+  @media screen and (min-width: 801px) {
+    .nav-bar {
+      display: inline-block !important; } }
   .nav-bar a {
     letter-spacing: 3px;
     margin-left: 2em;
@@ -72,29 +78,33 @@ html, body {
   .nav-bar i:hover {
     color: #abb7b7; }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 800px) {
   .nav-bar.hamburger {
-    display: none; } }
-@media screen and (max-width: 425px) {
-  .nav-bar.hamburger {
-    display: none; } }
+    background-color: #34495e;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-left: 45%;
+    position: relative;
+    z-index: 2; }
+    .nav-bar.hamburger a {
+      margin: 1em 0 1em 0;
+      display: block; } }
 
 #burger-icon {
   display: none; }
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 800px) {
     #burger-icon {
       display: inline-block;
       float: right;
       color: white; } }
   @media screen and (max-width: 425px) {
     #burger-icon {
-      display: inline-block;
-      float: right;
       color: white; } }
 
 .hero-flat-color {
   height: 300px; }
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 800px) {
     .hero-flat-color {
       height: 150px; } }
   @media screen and (max-width: 425px) {
@@ -103,7 +113,7 @@ html, body {
   .hero-flat-color .hero-header {
     padding-right: 10px;
     padding-top: 70px; }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .hero-flat-color .hero-header {
         padding-top: 20px; } }
     @media screen and (max-width: 425px) {
@@ -117,7 +127,7 @@ html, body {
     padding-right: .2em;
     font-family: "Lato", sans-serif;
     font-size: 2em; }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .hero-flat-color #hero-i {
         font-size: 1.2em;
         margin-left: 60%; } }
@@ -130,7 +140,7 @@ html, body {
     font-family: "Ovo", serif;
     font-size: 2.1em;
     color: white; }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .hero-flat-color #hero-dev {
         font-size: 1.3em; } }
     @media screen and (max-width: 425px) {
@@ -143,7 +153,7 @@ html, body {
     margin-left: 57%;
     font-family: "Lato", sans-serif;
     font-size: 2em; }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .hero-flat-color #hero-web {
         font-size: 1.2em;
         margin-left: 60%; } }
@@ -175,7 +185,7 @@ html, body {
     @media screen and (max-width: 425px) {
       .project-one .col-one-third, .project-two .col-one-third, .project-three .col-one-third, .project-four .col-one-third {
         width: 99%; } }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .project-one .col-one-third, .project-two .col-one-third, .project-three .col-one-third, .project-four .col-one-third {
         width: 99%; } }
   .project-one .col-two-third, .project-two .col-two-third, .project-three .col-two-third, .project-four .col-two-third {
@@ -187,7 +197,7 @@ html, body {
       .project-one .col-two-third, .project-two .col-two-third, .project-three .col-two-third, .project-four .col-two-third {
         height: 100%;
         width: 99%; } }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .project-one .col-two-third, .project-two .col-two-third, .project-three .col-two-third, .project-four .col-two-third {
         width: 99%; } }
   .project-one .portfolio-imgs, .project-two .portfolio-imgs, .project-three .portfolio-imgs, .project-four .portfolio-imgs {
@@ -220,7 +230,7 @@ html, body {
 
 #rider-icon {
   margin-left: 33%; }
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 800px) {
     #rider-icon {
       margin-left: 40%; } }
 
@@ -238,7 +248,7 @@ html, body {
     letter-spacing: 3px;
     font-family: "Ovo", serif;
     color: #e08283; }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .tool-box .tools-header {
         margin-left: 5%; } }
     @media screen and (max-width: 425px) {
@@ -261,7 +271,7 @@ html, body {
           display: block;
           width: 90%;
           margin-right: 2%; } }
-      @media screen and (max-width: 770px) {
+      @media screen and (max-width: 800px) {
         .tool-box .tools-list li {
           margin-left: 0;
           display: block;
@@ -278,7 +288,7 @@ html, body {
             font-size: 100%;
             margin: 0 6px 0 0;
             font-size: 1em; } }
-        @media screen and (max-width: 770px) {
+        @media screen and (max-width: 800px) {
           .tool-box .tools-list li span {
             float: left;
             font-size: 100%;
@@ -292,7 +302,7 @@ html, body {
   @media screen and (max-width: 425px) {
     .about-section {
       padding-bottom: 10%; } }
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 800px) {
     .about-section {
       padding-bottom: 10%; } }
   .about-section #about-header {
@@ -312,7 +322,7 @@ html, body {
     @media screen and (max-width: 425px) {
       .about-section .sum-about-me {
         margin-bottom: 10%; } }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .about-section .sum-about-me {
         margin-bottom: 10%; } }
   .about-section a {
@@ -325,7 +335,7 @@ html, body {
     letter-spacing: 3px;
     padding-top: 1em;
     padding-bottom: 1em; }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .about-section a {
         margin-left: 43%; } }
     @media screen and (max-width: 425px) {
@@ -348,7 +358,7 @@ html, body {
     margin-left: 75%;
     padding-bottom: 0;
     margin-bottom: 0; }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .footer h3 {
         margin-left: 40%;
         width: 49.5%;
@@ -366,7 +376,7 @@ html, body {
     color: #34495e; }
   .footer a:first-of-type {
     margin-left: 75%; }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .footer a:first-of-type {
         margin-left: 40%; } }
     @media screen and (max-width: 425px) {
@@ -378,7 +388,7 @@ html, body {
     float: left;
     font-size: .7em;
     color: #e08283; }
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 800px) {
       .footer sub {
         width: 100%;
         margin-left: 28%;

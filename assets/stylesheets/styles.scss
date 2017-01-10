@@ -5,7 +5,7 @@ $content-font: 'Lato', sans-serif;
 $serif-font: 'Ovo', serif;
 $width: 99%;
 $break-mobile: 425px;
-$break-tablet: 770px;
+$break-tablet: 800px;
 
 html, body {
   background-image: url(/assets/images/background.jpeg);
@@ -16,9 +16,14 @@ html, body {
 
 .main-header{
   width: $width;
-  display: inline-flex;
+  display: inline-block;
   vertical-align: top;
   margin-top: 1em;
+
+  @media screen and (max-width: $break-tablet){
+    height: 50px;
+  }
+
 }
 
 .name-container{
@@ -84,7 +89,10 @@ html, body {
   text-transform: uppercase;
   text-align: right;
   margin-right: 2px;
-  margin-top: 5px;
+  vertical-align: top;
+  @media screen and (min-width: 801px) {
+       display: inline-block !important;
+     }
 
   a{
     letter-spacing: 3px;
@@ -112,16 +120,30 @@ html, body {
 
 
 .nav-bar.hamburger{
+
   @media screen and (max-width: $break-tablet){
-    display: none;
+    background-color: $primary-color;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-left: 45%;
+    position: relative;
+    z-index: 2;
+
+    a {
+      // width: 100%;
+      margin: 1em 0 1em 0;
+      display: block;
+    }
+
   }
   @media screen and (max-width: $break-mobile){
-    display: none;
+    // display: none;
   }
 }
 
 #burger-icon{
-  display: none;
+    display: none;
 
   @media screen and (max-width: $break-tablet){
     display: inline-block;
@@ -129,8 +151,8 @@ html, body {
     color: white;
   }
   @media screen and (max-width: $break-mobile){
-    display: inline-block;
-    float: right;
+    // display: block;
+    // float: right;
     color: white;
   }
 }
