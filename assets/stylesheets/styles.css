@@ -5,21 +5,21 @@ html, body {
   background-repeat: no-repeat; }
 
 .main-header {
-  width: 99%;
+  width: 100%;
   display: inline-block;
   vertical-align: top;
-  margin-top: 1em; }
-  @media screen and (max-width: 800px) {
-    .main-header {
-      height: 50px; } }
+  position: relative;
+  z-index: 1; }
 
 .name-container {
   width: 48.5%;
   display: inline-block;
   margin-left: 1em;
-  color: white; }
+  color: white;
+  z-index: 2;
+  position: absolute; }
   .name-container #name-border-top {
-    margin-top: 5px;
+    margin-top: 1em;
     margin-left: 1em;
     width: 150px;
     height: 1em;
@@ -61,6 +61,8 @@ html, body {
   text-transform: uppercase;
   text-align: right;
   margin-right: 2px;
+  margin-left: 50%;
+  margin-top: .5em;
   vertical-align: top; }
   @media screen and (min-width: 801px) {
     .nav-bar {
@@ -81,44 +83,66 @@ html, body {
 @media screen and (max-width: 800px) {
   .nav-bar.hamburger {
     background-color: #34495e;
-    display: inline-block;
-    width: 100%;
+    display: none;
+    padding-top: 1em;
     text-align: center;
     padding-left: 45%;
-    position: relative;
-    z-index: 2; }
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    width: 100%;
+    vertical-align: top; }
     .nav-bar.hamburger a {
       margin: 1em 0 1em 0;
       display: block; } }
+@media screen and (max-width: 425px) {
+  .nav-bar.hamburger {
+    background-color: #34495e;
+    display: none;
+    padding-top: 1em;
+    text-align: center;
+    padding-left: 40%;
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    width: 100%;
+    vertical-align: top; } }
 
 #burger-icon {
-  display: none; }
+  display: none;
+  margin-top: .5em; }
   @media screen and (max-width: 800px) {
+    #burger-icon {
+      display: block;
+      width: auto;
+      margin-left: 95%;
+      color: #eee;
+      position: absolute;
+      z-index: 4; } }
+  @media screen and (max-width: 425px) {
     #burger-icon {
       display: inline-block;
       float: right;
-      color: white; } }
-  @media screen and (max-width: 425px) {
-    #burger-icon {
       color: white; } }
 
 .hero-flat-color {
   height: 300px; }
   @media screen and (max-width: 800px) {
     .hero-flat-color {
-      height: 150px; } }
+      height: 250px; } }
   @media screen and (max-width: 425px) {
     .hero-flat-color {
       height: 65px; } }
   .hero-flat-color .hero-header {
     padding-right: 10px;
-    padding-top: 70px; }
+    padding-top: 100px; }
     @media screen and (max-width: 800px) {
       .hero-flat-color .hero-header {
-        padding-top: 20px; } }
+        padding-top: 50px;
+        position: static; } }
     @media screen and (max-width: 425px) {
       .hero-flat-color .hero-header {
-        padding-top: 15px; } }
+        padding-top: 20px; } }
   .hero-flat-color .hero-text {
     color: #34495e; }
   .hero-flat-color #hero-i {

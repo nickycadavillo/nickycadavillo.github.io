@@ -15,14 +15,16 @@ html, body {
 }
 
 .main-header{
-  width: $width;
+  // background-color: white;
+  // border-bottom: 1px solid $secondary-color;
+  width: 100%;
   display: inline-block;
   vertical-align: top;
-  margin-top: 1em;
+  position: relative;
+  z-index: 1;
+  // margin-top: 1em;
 
-  @media screen and (max-width: $break-tablet){
-    height: 50px;
-  }
+
 
 }
 
@@ -31,9 +33,12 @@ html, body {
   display: inline-block;
   margin-left: 1em;
   color: rgb(255, 255, 255);
+  z-index: 2;
+  position: absolute;
 
   #name-border-top{
-    margin-top: 5px;
+    // margin-top: 5px;
+    margin-top: 1em;
     margin-left: 1em;
     width: 150px;
     height: 1em;
@@ -89,6 +94,8 @@ html, body {
   text-transform: uppercase;
   text-align: right;
   margin-right: 2px;
+  margin-left: 50%;
+  margin-top: .5em;
   vertical-align: top;
   @media screen and (min-width: 801px) {
        display: inline-block !important;
@@ -123,36 +130,53 @@ html, body {
 
   @media screen and (max-width: $break-tablet){
     background-color: $primary-color;
-    display: inline-block;
-    width: 100%;
+    display: none;
+    padding-top: 1em;
     text-align: center;
     padding-left: 45%;
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    width: 100%;
+    vertical-align: top;
 
     a {
-      // width: 100%;
       margin: 1em 0 1em 0;
       display: block;
     }
 
   }
   @media screen and (max-width: $break-mobile){
-    // display: none;
+    background-color: $primary-color;
+    display: none;
+    padding-top: 1em;
+    text-align: center;
+    padding-left: 40%;
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    width: 100%;
+    vertical-align: top;
   }
 }
 
 #burger-icon{
     display: none;
+    margin-top: .5em;
 
   @media screen and (max-width: $break-tablet){
-    display: inline-block;
-    float: right;
-    color: white;
+    // margin-top: 1em;
+    display: block;
+    width: auto;
+    margin-left: 95%;
+    color: #eee;
+    position: absolute;
+    z-index: 4;
   }
   @media screen and (max-width: $break-mobile){
-    // display: block;
-    // float: right;
+    // margin-top: 1em;
+    display: inline-block;
+    float: right;
     color: white;
   }
 }
@@ -160,7 +184,8 @@ html, body {
 .hero-flat-color{
   height: 300px;
   @media screen and (max-width: $break-tablet){
-    height: 150px;
+    // margin-top: 10%;
+    height: 250px;
   }
   @media screen and (max-width: $break-mobile){
     height: 65px;
@@ -168,13 +193,13 @@ html, body {
 
   .hero-header{
     padding-right: 10px;
-    // border: 1px solid black;
-    padding-top: 70px;
+    padding-top: 100px;
     @media screen and (max-width: $break-tablet){
-      padding-top: 20px;
+      padding-top: 50px;
+      position: static;
     }
     @media screen and (max-width: $break-mobile){
-      padding-top: 15px;
+      padding-top: 20px;
     }
   }
 

@@ -10,5 +10,5 @@ portfolioApp.controller('ScrollController', function($scope, $location, $anchorS
 
     $(".nav-bar").addClass("hamburger").before('<i id = "burger-icon" class="fa fa-bars fa-2x" aria-hidden="true"></i>');
       $("#burger-icon").click(function(){
-          $(".nav-bar").slideToggle();
+          $(".nav-bar").toggle();
       });
