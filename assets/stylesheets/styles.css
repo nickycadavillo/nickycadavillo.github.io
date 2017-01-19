@@ -92,7 +92,7 @@ html, body {
     position: absolute;
     z-index: 3;
     margin: 0;
-    width: 100%;
+    width: 99%;
     vertical-align: top; }
     .nav-bar.hamburger a {
       margin: 1em 0 1em 0;
@@ -107,7 +107,7 @@ html, body {
     position: absolute;
     z-index: 3;
     margin: 0;
-    width: 100%;
+    width: 99%;
     vertical-align: top; } }
 
 #burger-icon {
@@ -257,7 +257,6 @@ html, body {
       margin-left: 40%; } }
 
 .tool-box {
-  border: 1px solid red;
   padding-left: 10%;
   padding-top: 1.5em;
   height: auto;
@@ -348,21 +347,21 @@ html, body {
       .about-section .sum-about-me {
         margin-bottom: 10%; } }
   .about-section a {
-    border-top: 3px solid #abb7b7;
-    border-bottom: 3px solid #abb7b7;
-    text-transform: uppercase;
     color: #db6e6f;
     text-decoration: none;
-    margin-left: 45%;
-    letter-spacing: 3px;
-    padding-top: 1em;
-    padding-bottom: 1em; }
+    border-left: 3px solid #abb7b7;
+    margin-left: 1em;
+    padding-left: 1.5em;
+    letter-spacing: 3px; }
+  .about-section a:first-of-type {
+    margin-left: 39%;
+    border: none; }
     @media screen and (max-width: 800px) {
-      .about-section a {
-        margin-left: 43%; } }
+      .about-section a:first-of-type {
+        margin-left: 30%; } }
     @media screen and (max-width: 425px) {
-      .about-section a {
-        margin-left: 35%; } }
+      .about-section a:first-of-type {
+        margin-left: 25%; } }
   .about-section a:hover {
     color: #34495e; }
 

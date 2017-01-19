@@ -139,7 +139,7 @@ html, body {
     position: absolute;
     z-index: 3;
     margin: 0;
-    width: 100%;
+    width: $width;
     vertical-align: top;
 
     a {
@@ -157,7 +157,7 @@ html, body {
     position: absolute;
     z-index: 3;
     margin: 0;
-    width: 100%;
+    width: $width;
     vertical-align: top;
   }
 }
@@ -363,7 +363,6 @@ html, body {
 }
 
 .tool-box{
-  border:1px solid red;
   padding-left: 10%;
   padding-top: 1.5em;
   height: auto;
@@ -475,20 +474,33 @@ html, body {
   }
 
   a{
-    border-top: 3px solid $secondary-color;
-    border-bottom: 3px solid $secondary-color;
-    text-transform: uppercase;
     color: darken($accent-color, 5%);
     text-decoration: none;
-    margin-left: 45%;
+    border-left: 3px solid $secondary-color;
+    margin-left: 1em;
+    padding-left: 1.5em;
     letter-spacing: 3px;
-    padding-top: 1em;
-    padding-bottom: 1em;
+
+
+    // @media screen and (max-width: $break-mobile){
+    //   // margin-left: 35%;
+    //   border-top: none;
+    //   border-bottom: none;
+    //   border-left: 3px solid $secondary-color;
+    //   // margin-left: 10%;
+    //   font-size: 1em;
+    // }
+  }
+
+
+  a:first-of-type{
+    margin-left: 39%;
+    border: none;
     @media screen and (max-width: $break-tablet){
-      margin-left: 43%;
+      margin-left: 30%;
     }
     @media screen and (max-width: $break-mobile){
-      margin-left: 35%;
+      margin-left: 25%;
     }
   }
 
