@@ -373,9 +373,6 @@ html, body {
   .chat-desc{
     @extend .rider-desc;
   }
-  // #chat-app-photo{
-  //   max-height:
-  // }
 
   .chat-tech{
     @extend .rider-tech;
@@ -384,6 +381,14 @@ html, body {
 
 .project-three {
   @extend .project-one;
+
+  .view-mode-desc{
+    @extend .rider-desc;
+  }
+
+  .view-mode-tech{
+    @extend .rider-tech;
+  }
 }
 
 .project-four{

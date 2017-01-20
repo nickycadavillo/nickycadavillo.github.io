@@ -254,16 +254,16 @@ html, body {
   .project-one .portfolio-imgs, .project-two .portfolio-imgs, .project-three .portfolio-imgs, .project-four .portfolio-imgs {
     max-width: 100%;
     max-height: 100%; }
-  .project-one .rider-desc, .project-two .rider-desc, .project-three .rider-desc, .project-four .rider-desc, .project-two .chat-desc {
+  .project-one .rider-desc, .project-two .rider-desc, .project-three .rider-desc, .project-four .rider-desc, .project-two .chat-desc, .project-three .view-mode-desc {
     font-size: 1em;
     color: #34495e; }
-  .project-one .rider-tech, .project-two .rider-tech, .project-three .rider-tech, .project-four .rider-tech, .project-two .chat-tech {
+  .project-one .rider-tech, .project-two .rider-tech, .project-three .rider-tech, .project-four .rider-tech, .project-two .chat-tech, .project-three .view-mode-tech {
     font-family: "Ovo", serif;
     font-size: 1em;
     letter-spacing: 3px;
     padding-left: 0;
     color: #8a9b9b; }
-    .project-one .rider-tech li, .project-two .rider-tech li, .project-three .rider-tech li, .project-four .rider-tech li, .project-two .chat-tech li {
+    .project-one .rider-tech li, .project-two .rider-tech li, .project-three .rider-tech li, .project-four .rider-tech li, .project-two .chat-tech li, .project-three .view-mode-tech li {
       list-style: none;
       font-family: "Lato", sans-serif;
       color: #8a9b9b;
