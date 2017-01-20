@@ -8,7 +8,6 @@ $break-mobile: 425px;
 $break-tablet: 800px;
 
 html, body {
-  // background-image: url(/assets/images/background.jpeg);
   background-image: url(/assets/images/big-sur-nc.jpg);
   background-size: contain;
   overflow-x: hidden;
@@ -203,10 +202,10 @@ html, body {
 .hero-flat-color{
   height: 650px;
   @media screen and (max-width: $break-tablet){
-    height: 250px;
+    height: 300px;
   }
   @media screen and (max-width: $break-mobile){
-    height: 150px;
+    height: 200px;
   }
 
   .hero-header{
@@ -215,7 +214,7 @@ html, body {
     @media screen and (max-width: $break-tablet){
     }
     @media screen and (max-width: $break-mobile){
-      padding-top: 80px;
+      padding-top: 100px;
     }
   }
 
@@ -329,14 +328,67 @@ html, body {
     max-height: 100%;
   }
 
+  .rider-desc{
+    font-size: 1em;
+    color: $primary-color;
+  }
+
+  .rider-tech{
+    font-family: $serif-font;
+    font-size: 1em;
+    letter-spacing: 3px;
+    padding-left: 0;
+    color: darken($secondary-color, 12%);
+
+    li{
+      list-style: none;
+      font-family: $content-font;
+      color: darken($secondary-color, 12%);
+      font-size: .9em;
+      letter-spacing: normal;
+    }
+  }
+
+  .port-icon{
+    color: $accent-color;
+    padding: 5px;
+  }
+
+  .port-icon:hover{
+    color: $secondary-color;
+  }
+
+  #rider-icon{
+    margin-left: 33%;
+    @media screen and (max-width: $break-tablet){
+      margin-left: 40%;
+    }
+  }
+
 }
 
 .project-two {
   @extend .project-one;
+
+  .chat-desc{
+    @extend .rider-desc;
+  }
+
+  .chat-tech{
+    @extend .rider-tech;
+  }
 }
 
 .project-three {
   @extend .project-one;
+
+  .view-mode-desc{
+    @extend .rider-desc;
+  }
+
+  .view-mode-tech{
+    @extend .rider-tech;
+  }
 }
 
 .project-four{
@@ -344,42 +396,42 @@ html, body {
 
 }
 
-.rider-desc{
-  font-size: 1em;
-  color: $primary-color;
-}
-
-.rider-tech{
-  font-family: $serif-font;
-  font-size: 1em;
-  letter-spacing: 3px;
-  padding-left: 0;
-  color: darken($secondary-color, 12%);
-
-  li{
-    list-style: none;
-    font-family: $content-font;
-    color: darken($secondary-color, 12%);
-    font-size: .9em;
-    letter-spacing: normal;
-  }
-}
-
-.port-icon{
-  color: $accent-color;
-  padding: 5px;
-}
-
-.port-icon:hover{
-  color: $secondary-color;
-}
-
-#rider-icon{
-  margin-left: 33%;
-  @media screen and (max-width: $break-tablet){
-    margin-left: 40%;
-  }
-}
+// .rider-desc{
+//   font-size: 1em;
+//   color: $primary-color;
+// }
+//
+// .rider-tech{
+//   font-family: $serif-font;
+//   font-size: 1em;
+//   letter-spacing: 3px;
+//   padding-left: 0;
+//   color: darken($secondary-color, 12%);
+//
+//   li{
+//     list-style: none;
+//     font-family: $content-font;
+//     color: darken($secondary-color, 12%);
+//     font-size: .9em;
+//     letter-spacing: normal;
+//   }
+// }
+//
+// .port-icon{
+//   color: $accent-color;
+//   padding: 5px;
+// }
+//
+// .port-icon:hover{
+//   color: $secondary-color;
+// }
+//
+// #rider-icon{
+//   margin-left: 33%;
+//   @media screen and (max-width: $break-tablet){
+//     margin-left: 40%;
+//   }
+// }
 
 .tool-box{
   padding-left: 10%;
@@ -525,28 +577,29 @@ html, body {
   text-transform: uppercase;
 
   h3 {
-    width: $width/4;
     font-size: .9em;
     letter-spacing: 3px;
     color: $primary-color;
-    // margin-left: 43%;
     margin-left: 75%;
     padding-bottom: 0;
     margin-bottom: 0;
     @media screen and (max-width: $break-tablet){
-      margin-left: 40%;
-      width: $width/2;
-      display: block;
+      margin-left: 70%;
     }
     @media screen and (max-width: $break-mobile){
-      margin-left: 28%;
-      width: $width/2;
+      margin-left: 0;
+    }
+  }
+
+  .a-footer-cont {
+    @media screen and (max-width: $break-mobile){
+      text-align: center;
     }
   }
 
   a{
     padding-right: .7em;
-    display: inline-block;
+    // display: inline-block;
     text-decoration: none;
     color: darken($accent-color, 5%);
 
@@ -559,24 +612,19 @@ html, body {
   a:first-of-type{
     margin-left: 75%;
     @media screen and (max-width: $break-tablet){
-      margin-left: 40%;
+      margin-left: 70%;
     }
     @media screen and (max-width: $break-mobile){
-      margin-left: 28%;
+      margin-left: 0;
     }
   }
 
-  sub {
+  .designed-by {
     margin-left: 10%;
     padding-top: 10px;
     float: left;
     font-size: .7em;
     color: $accent-color;
-    @media screen and (max-width: $break-tablet){
-      width: 100%;
-      margin-left: 28%;
-      padding-bottom: 1em;
-    }
     @media screen and (max-width: $break-mobile){
       text-align: center;
       width: 80%;

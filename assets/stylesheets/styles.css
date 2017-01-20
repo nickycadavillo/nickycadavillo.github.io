@@ -157,16 +157,16 @@ html, body {
   height: 650px; }
   @media screen and (max-width: 800px) {
     .hero-flat-color {
-      height: 250px; } }
+      height: 300px; } }
   @media screen and (max-width: 425px) {
     .hero-flat-color {
-      height: 150px; } }
+      height: 200px; } }
   .hero-flat-color .hero-header {
     padding-right: 10px;
     padding-top: 100px; }
     @media screen and (max-width: 425px) {
       .hero-flat-color .hero-header {
-        padding-top: 80px; } }
+        padding-top: 100px; } }
   .hero-flat-color .hero-text {
     color: #34495e; }
   .hero-flat-color #hero-i {
@@ -254,36 +254,31 @@ html, body {
   .project-one .portfolio-imgs, .project-two .portfolio-imgs, .project-three .portfolio-imgs, .project-four .portfolio-imgs {
     max-width: 100%;
     max-height: 100%; }
-
-.rider-desc {
-  font-size: 1em;
-  color: #34495e; }
-
-.rider-tech {
-  font-family: "Ovo", serif;
-  font-size: 1em;
-  letter-spacing: 3px;
-  padding-left: 0;
-  color: #8a9b9b; }
-  .rider-tech li {
-    list-style: none;
-    font-family: "Lato", sans-serif;
-    color: #8a9b9b;
-    font-size: .9em;
-    letter-spacing: normal; }
-
-.port-icon {
-  color: #e08283;
-  padding: 5px; }
-
-.port-icon:hover {
-  color: #abb7b7; }
-
-#rider-icon {
-  margin-left: 33%; }
-  @media screen and (max-width: 800px) {
-    #rider-icon {
-      margin-left: 40%; } }
+  .project-one .rider-desc, .project-two .rider-desc, .project-three .rider-desc, .project-four .rider-desc, .project-two .chat-desc, .project-three .view-mode-desc {
+    font-size: 1em;
+    color: #34495e; }
+  .project-one .rider-tech, .project-two .rider-tech, .project-three .rider-tech, .project-four .rider-tech, .project-two .chat-tech, .project-three .view-mode-tech {
+    font-family: "Ovo", serif;
+    font-size: 1em;
+    letter-spacing: 3px;
+    padding-left: 0;
+    color: #8a9b9b; }
+    .project-one .rider-tech li, .project-two .rider-tech li, .project-three .rider-tech li, .project-four .rider-tech li, .project-two .chat-tech li, .project-three .view-mode-tech li {
+      list-style: none;
+      font-family: "Lato", sans-serif;
+      color: #8a9b9b;
+      font-size: .9em;
+      letter-spacing: normal; }
+  .project-one .port-icon, .project-two .port-icon, .project-three .port-icon, .project-four .port-icon {
+    color: #e08283;
+    padding: 5px; }
+  .project-one .port-icon:hover, .project-two .port-icon:hover, .project-three .port-icon:hover, .project-four .port-icon:hover {
+    color: #abb7b7; }
+  .project-one #rider-icon, .project-two #rider-icon, .project-three #rider-icon, .project-four #rider-icon {
+    margin-left: 33%; }
+    @media screen and (max-width: 800px) {
+      .project-one #rider-icon, .project-two #rider-icon, .project-three #rider-icon, .project-four #rider-icon {
+        margin-left: 40%; } }
 
 .tool-box {
   padding-left: 10%;
@@ -399,7 +394,6 @@ html, body {
   background-color: #e5e8e8;
   text-transform: uppercase; }
   .footer h3 {
-    width: 24.75%;
     font-size: .9em;
     letter-spacing: 3px;
     color: #34495e;
@@ -408,16 +402,15 @@ html, body {
     margin-bottom: 0; }
     @media screen and (max-width: 800px) {
       .footer h3 {
-        margin-left: 40%;
-        width: 49.5%;
-        display: block; } }
+        margin-left: 70%; } }
     @media screen and (max-width: 425px) {
       .footer h3 {
-        margin-left: 28%;
-        width: 49.5%; } }
+        margin-left: 0; } }
+  @media screen and (max-width: 425px) {
+    .footer .a-footer-cont {
+      text-align: center; } }
   .footer a {
     padding-right: .7em;
-    display: inline-block;
     text-decoration: none;
     color: #db6e6f; }
   .footer a:hover {
@@ -426,23 +419,18 @@ html, body {
     margin-left: 75%; }
     @media screen and (max-width: 800px) {
       .footer a:first-of-type {
-        margin-left: 40%; } }
+        margin-left: 70%; } }
     @media screen and (max-width: 425px) {
       .footer a:first-of-type {
-        margin-left: 28%; } }
-  .footer sub {
+        margin-left: 0; } }
+  .footer .designed-by {
     margin-left: 10%;
     padding-top: 10px;
     float: left;
     font-size: .7em;
     color: #e08283; }
-    @media screen and (max-width: 800px) {
-      .footer sub {
-        width: 100%;
-        margin-left: 28%;
-        padding-bottom: 1em; } }
     @media screen and (max-width: 425px) {
-      .footer sub {
+      .footer .designed-by {
         text-align: center;
         width: 80%;
         margin-left: 10%;
