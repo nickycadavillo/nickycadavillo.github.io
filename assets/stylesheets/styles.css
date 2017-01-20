@@ -157,16 +157,16 @@ html, body {
   height: 650px; }
   @media screen and (max-width: 800px) {
     .hero-flat-color {
-      height: 250px; } }
+      height: 300px; } }
   @media screen and (max-width: 425px) {
     .hero-flat-color {
-      height: 150px; } }
+      height: 200px; } }
   .hero-flat-color .hero-header {
     padding-right: 10px;
     padding-top: 100px; }
     @media screen and (max-width: 425px) {
       .hero-flat-color .hero-header {
-        padding-top: 80px; } }
+        padding-top: 100px; } }
   .hero-flat-color .hero-text {
     color: #34495e; }
   .hero-flat-color #hero-i {
@@ -399,7 +399,6 @@ html, body {
   background-color: #e5e8e8;
   text-transform: uppercase; }
   .footer h3 {
-    width: 24.75%;
     font-size: .9em;
     letter-spacing: 3px;
     color: #34495e;
@@ -408,16 +407,15 @@ html, body {
     margin-bottom: 0; }
     @media screen and (max-width: 800px) {
       .footer h3 {
-        margin-left: 40%;
-        width: 49.5%;
-        display: block; } }
+        margin-left: 70%; } }
     @media screen and (max-width: 425px) {
       .footer h3 {
-        margin-left: 28%;
-        width: 49.5%; } }
+        margin-left: 0; } }
+  @media screen and (max-width: 425px) {
+    .footer .a-footer-cont {
+      text-align: center; } }
   .footer a {
     padding-right: .7em;
-    display: inline-block;
     text-decoration: none;
     color: #db6e6f; }
   .footer a:hover {
@@ -426,23 +424,18 @@ html, body {
     margin-left: 75%; }
     @media screen and (max-width: 800px) {
       .footer a:first-of-type {
-        margin-left: 40%; } }
+        margin-left: 70%; } }
     @media screen and (max-width: 425px) {
       .footer a:first-of-type {
-        margin-left: 28%; } }
-  .footer sub {
+        margin-left: 0; } }
+  .footer .designed-by {
     margin-left: 10%;
     padding-top: 10px;
     float: left;
     font-size: .7em;
     color: #e08283; }
-    @media screen and (max-width: 800px) {
-      .footer sub {
-        width: 100%;
-        margin-left: 28%;
-        padding-bottom: 1em; } }
     @media screen and (max-width: 425px) {
-      .footer sub {
+      .footer .designed-by {
         text-align: center;
         width: 80%;
         margin-left: 10%;
