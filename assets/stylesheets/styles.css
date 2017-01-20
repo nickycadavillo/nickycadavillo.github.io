@@ -254,36 +254,31 @@ html, body {
   .project-one .portfolio-imgs, .project-two .portfolio-imgs, .project-three .portfolio-imgs, .project-four .portfolio-imgs {
     max-width: 100%;
     max-height: 100%; }
-
-.rider-desc {
-  font-size: 1em;
-  color: #34495e; }
-
-.rider-tech {
-  font-family: "Ovo", serif;
-  font-size: 1em;
-  letter-spacing: 3px;
-  padding-left: 0;
-  color: #8a9b9b; }
-  .rider-tech li {
-    list-style: none;
-    font-family: "Lato", sans-serif;
-    color: #8a9b9b;
-    font-size: .9em;
-    letter-spacing: normal; }
-
-.port-icon {
-  color: #e08283;
-  padding: 5px; }
-
-.port-icon:hover {
-  color: #abb7b7; }
-
-#rider-icon {
-  margin-left: 33%; }
-  @media screen and (max-width: 800px) {
-    #rider-icon {
-      margin-left: 40%; } }
+  .project-one .rider-desc, .project-two .rider-desc, .project-three .rider-desc, .project-four .rider-desc, .project-two .chat-desc {
+    font-size: 1em;
+    color: #34495e; }
+  .project-one .rider-tech, .project-two .rider-tech, .project-three .rider-tech, .project-four .rider-tech, .project-two .chat-tech {
+    font-family: "Ovo", serif;
+    font-size: 1em;
+    letter-spacing: 3px;
+    padding-left: 0;
+    color: #8a9b9b; }
+    .project-one .rider-tech li, .project-two .rider-tech li, .project-three .rider-tech li, .project-four .rider-tech li, .project-two .chat-tech li {
+      list-style: none;
+      font-family: "Lato", sans-serif;
+      color: #8a9b9b;
+      font-size: .9em;
+      letter-spacing: normal; }
+  .project-one .port-icon, .project-two .port-icon, .project-three .port-icon, .project-four .port-icon {
+    color: #e08283;
+    padding: 5px; }
+  .project-one .port-icon:hover, .project-two .port-icon:hover, .project-three .port-icon:hover, .project-four .port-icon:hover {
+    color: #abb7b7; }
+  .project-one #rider-icon, .project-two #rider-icon, .project-three #rider-icon, .project-four #rider-icon {
+    margin-left: 33%; }
+    @media screen and (max-width: 800px) {
+      .project-one #rider-icon, .project-two #rider-icon, .project-three #rider-icon, .project-four #rider-icon {
+        margin-left: 40%; } }
 
 .tool-box {
   padding-left: 10%;

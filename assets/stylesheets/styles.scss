@@ -328,10 +328,58 @@ html, body {
     max-height: 100%;
   }
 
+  .rider-desc{
+    font-size: 1em;
+    color: $primary-color;
+  }
+
+  .rider-tech{
+    font-family: $serif-font;
+    font-size: 1em;
+    letter-spacing: 3px;
+    padding-left: 0;
+    color: darken($secondary-color, 12%);
+
+    li{
+      list-style: none;
+      font-family: $content-font;
+      color: darken($secondary-color, 12%);
+      font-size: .9em;
+      letter-spacing: normal;
+    }
+  }
+
+  .port-icon{
+    color: $accent-color;
+    padding: 5px;
+  }
+
+  .port-icon:hover{
+    color: $secondary-color;
+  }
+
+  #rider-icon{
+    margin-left: 33%;
+    @media screen and (max-width: $break-tablet){
+      margin-left: 40%;
+    }
+  }
+
 }
 
 .project-two {
   @extend .project-one;
+
+  .chat-desc{
+    @extend .rider-desc;
+  }
+  // #chat-app-photo{
+  //   max-height:
+  // }
+
+  .chat-tech{
+    @extend .rider-tech;
+  }
 }
 
 .project-three {
@@ -343,42 +391,42 @@ html, body {
 
 }
 
-.rider-desc{
-  font-size: 1em;
-  color: $primary-color;
-}
-
-.rider-tech{
-  font-family: $serif-font;
-  font-size: 1em;
-  letter-spacing: 3px;
-  padding-left: 0;
-  color: darken($secondary-color, 12%);
-
-  li{
-    list-style: none;
-    font-family: $content-font;
-    color: darken($secondary-color, 12%);
-    font-size: .9em;
-    letter-spacing: normal;
-  }
-}
-
-.port-icon{
-  color: $accent-color;
-  padding: 5px;
-}
-
-.port-icon:hover{
-  color: $secondary-color;
-}
-
-#rider-icon{
-  margin-left: 33%;
-  @media screen and (max-width: $break-tablet){
-    margin-left: 40%;
-  }
-}
+// .rider-desc{
+//   font-size: 1em;
+//   color: $primary-color;
+// }
+//
+// .rider-tech{
+//   font-family: $serif-font;
+//   font-size: 1em;
+//   letter-spacing: 3px;
+//   padding-left: 0;
+//   color: darken($secondary-color, 12%);
+//
+//   li{
+//     list-style: none;
+//     font-family: $content-font;
+//     color: darken($secondary-color, 12%);
+//     font-size: .9em;
+//     letter-spacing: normal;
+//   }
+// }
+//
+// .port-icon{
+//   color: $accent-color;
+//   padding: 5px;
+// }
+//
+// .port-icon:hover{
+//   color: $secondary-color;
+// }
+//
+// #rider-icon{
+//   margin-left: 33%;
+//   @media screen and (max-width: $break-tablet){
+//     margin-left: 40%;
+//   }
+// }
 
 .tool-box{
   padding-left: 10%;
