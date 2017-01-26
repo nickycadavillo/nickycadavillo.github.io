@@ -200,7 +200,7 @@ html, body {
 }
 
 .hero-flat-color{
-  height: 650px;
+  height: 600px;
   @media screen and (max-width: $break-tablet){
     height: 300px;
   }
@@ -328,6 +328,10 @@ html, body {
     max-height: 100%;
   }
 
+  #rider-image{
+    padding-top: 1em;
+  }
+
   .rider-desc{
     font-size: 1em;
     color: $primary-color;
@@ -377,6 +381,11 @@ html, body {
   .chat-tech{
     @extend .rider-tech;
   }
+
+  #chat-app-photo{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 }
 
 .project-three {
@@ -395,43 +404,6 @@ html, body {
   @extend .project-one;
 
 }
-
-// .rider-desc{
-//   font-size: 1em;
-//   color: $primary-color;
-// }
-//
-// .rider-tech{
-//   font-family: $serif-font;
-//   font-size: 1em;
-//   letter-spacing: 3px;
-//   padding-left: 0;
-//   color: darken($secondary-color, 12%);
-//
-//   li{
-//     list-style: none;
-//     font-family: $content-font;
-//     color: darken($secondary-color, 12%);
-//     font-size: .9em;
-//     letter-spacing: normal;
-//   }
-// }
-//
-// .port-icon{
-//   color: $accent-color;
-//   padding: 5px;
-// }
-//
-// .port-icon:hover{
-//   color: $secondary-color;
-// }
-//
-// #rider-icon{
-//   margin-left: 33%;
-//   @media screen and (max-width: $break-tablet){
-//     margin-left: 40%;
-//   }
-// }
 
 .tool-box{
   padding-left: 10%;
@@ -586,13 +558,14 @@ html, body {
     @media screen and (max-width: $break-tablet){
       margin-left: 70%;
     }
-    @media screen and (max-width: $break-mobile){
+    @media screen and (max-width: 550px){
       margin-left: 0;
+      padding-right: .8em;
     }
   }
 
   .a-footer-cont {
-    @media screen and (max-width: $break-mobile){
+    @media screen and (max-width: 550px){
       text-align: center;
     }
   }
@@ -614,7 +587,7 @@ html, body {
     @media screen and (max-width: $break-tablet){
       margin-left: 70%;
     }
-    @media screen and (max-width: $break-mobile){
+    @media screen and (max-width: 550px){
       margin-left: 0;
     }
   }
@@ -625,9 +598,10 @@ html, body {
     float: left;
     font-size: .7em;
     color: $accent-color;
-    @media screen and (max-width: $break-mobile){
+    @media screen and (max-width: 550px){
       text-align: center;
       width: 80%;
+      margin-bottom: 2em;
       margin-left: 10%;
       font-size: .6em;
     }

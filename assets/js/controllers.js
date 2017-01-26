@@ -12,3 +12,5 @@ portfolioApp.controller('ScrollController', function($scope, $location, $anchorS
       $("#burger-icon").click(function(){
           $(".nav-bar").toggle();
       });
+
+      // $("#chat-project-two").before($("#chat-project-one"));
