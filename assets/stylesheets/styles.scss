@@ -483,12 +483,10 @@ html, body {
   margin-bottom: 10%;
   background-color: white;
   padding-top: 1.5em;
-  // padding-bottom: 5%;
   @media screen and (max-width: $break-mobile){
     // padding-bottom: 10%;
   }
   @media screen and (max-width: $break-tablet){
-    // padding-bottom: 10%;
     margin-bottom: 15%;
   }
 
@@ -572,10 +570,8 @@ html, body {
 
   a{
     padding-right: .7em;
-    // display: inline-block;
     text-decoration: none;
     color: darken($accent-color, 5%);
-
   }
 
   a:hover{
